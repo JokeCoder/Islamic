@@ -1,0 +1,624 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		631860B6CD2E73FBAAF2EEA2 /* Pods_Islamic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD128E1232E09167BD0ADDA4 /* Pods_Islamic.framework */; };
+		DCED9B722547F1CE00ACB166 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCED9B702547F1CE00ACB166 /* LaunchScreen.storyboard */; };
+		DCED9B7E2547F20900ACB166 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCED9B7D2547F20900ACB166 /* Main.storyboard */; };
+		DCED9B832547F21800ACB166 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCED9B812547F21800ACB166 /* Extensions.swift */; };
+		DCED9B842547F21800ACB166 /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCED9B822547F21800ACB166 /* Database.swift */; };
+		DCED9B922547F22500ACB166 /* DuolarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCED9B872547F22500ACB166 /* DuolarController.swift */; };
+		DCED9B932547F22500ACB166 /* Asmaul_Husna_Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCED9B882547F22500ACB166 /* Asmaul_Husna_Cell.swift */; };
+		DCED9B942547F22500ACB166 /* Al-Jome_As-SahihController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCED9B892547F22500ACB166 /* Al-Jome_As-SahihController.swift */; };
+		DCED9B952547F22500ACB166 /* Zikrlar_Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCED9B8A2547F22500ACB166 /* Zikrlar_Controller.swift */; };
+		DCED9B962547F22500ACB166 /* HomePageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCED9B8B2547F22500ACB166 /* HomePageController.swift */; };
+		DCED9B972547F22500ACB166 /* NamozOqishniOrganamizController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCED9B8C2547F22500ACB166 /* NamozOqishniOrganamizController.swift */; };
+		DCED9B982547F22500ACB166 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCED9B8D2547F22500ACB166 /* WebViewController.swift */; };
+		DCED9B992547F22500ACB166 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCED9B8E2547F22500ACB166 /* CalendarViewController.swift */; };
+		DCED9B9A2547F22500ACB166 /* Al-Jome_As-Sahih_Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCED9B8F2547F22500ACB166 /* Al-Jome_As-Sahih_Cell.swift */; };
+		DCED9B9B2547F22500ACB166 /* NamozVaqtlariController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCED9B902547F22500ACB166 /* NamozVaqtlariController.swift */; };
+		DCED9B9C2547F22500ACB166 /* Asmaul_Husna_Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCED9B912547F22500ACB166 /* Asmaul_Husna_Controller.swift */; };
+		DCED9BBF2547F23A00ACB166 /* tahorat_3.pdf in Resources */ = {isa = PBXBuildFile; fileRef = DCED9B9F2547F23900ACB166 /* tahorat_3.pdf */; };
+		DCED9BC02547F23A00ACB166 /* img_0_women.pdf in Resources */ = {isa = PBXBuildFile; fileRef = DCED9BA02547F23900ACB166 /* img_0_women.pdf */; };
+		DCED9BC12547F23A00ACB166 /* tahorat_2.pdf in Resources */ = {isa = PBXBuildFile; fileRef = DCED9BA12547F23900ACB166 /* tahorat_2.pdf */; };
+		DCED9BC22547F23A00ACB166 /* tahorat_0.pdf in Resources */ = {isa = PBXBuildFile; fileRef = DCED9BA22547F23900ACB166 /* tahorat_0.pdf */; };
+		DCED9BC32547F23A00ACB166 /* img_1_men.pdf in Resources */ = {isa = PBXBuildFile; fileRef = DCED9BA32547F23900ACB166 /* img_1_men.pdf */; };
+		DCED9BC42547F23A00ACB166 /* Muslim.db in Resources */ = {isa = PBXBuildFile; fileRef = DCED9BA42547F23900ACB166 /* Muslim.db */; };
+		DCED9BC52547F23A00ACB166 /* tahorat_1.pdf in Resources */ = {isa = PBXBuildFile; fileRef = DCED9BA52547F23900ACB166 /* tahorat_1.pdf */; };
+		DCED9BC62547F23A00ACB166 /* tahorat_5.pdf in Resources */ = {isa = PBXBuildFile; fileRef = DCED9BA62547F23900ACB166 /* tahorat_5.pdf */; };
+		DCED9BC72547F23A00ACB166 /* img_0_men.pdf in Resources */ = {isa = PBXBuildFile; fileRef = DCED9BA72547F23900ACB166 /* img_0_men.pdf */; };
+		DCED9BC82547F23A00ACB166 /* img_6_women.pdf in Resources */ = {isa = PBXBuildFile; fileRef = DCED9BA82547F23900ACB166 /* img_6_women.pdf */; };
+		DCED9BC92547F23A00ACB166 /* tahorat_4.pdf in Resources */ = {isa = PBXBuildFile; fileRef = DCED9BA92547F23900ACB166 /* tahorat_4.pdf */; };
+		DCED9BCA2547F23A00ACB166 /* fajr.html in Resources */ = {isa = PBXBuildFile; fileRef = DCED9BAA2547F23900ACB166 /* fajr.html */; };
+		DCED9BCB2547F23A00ACB166 /* tahorat_6.pdf in Resources */ = {isa = PBXBuildFile; fileRef = DCED9BAB2547F23900ACB166 /* tahorat_6.pdf */; };
+		DCED9BCC2547F23A00ACB166 /* tahorat_7.pdf in Resources */ = {isa = PBXBuildFile; fileRef = DCED9BAC2547F23900ACB166 /* tahorat_7.pdf */; };
+		DCED9BCD2547F23A00ACB166 /* img_1_women.pdf in Resources */ = {isa = PBXBuildFile; fileRef = DCED9BAD2547F23900ACB166 /* img_1_women.pdf */; };
+		DCED9BCE2547F23A00ACB166 /* maghrib.html in Resources */ = {isa = PBXBuildFile; fileRef = DCED9BAE2547F23900ACB166 /* maghrib.html */; };
+		DCED9BCF2547F23A00ACB166 /* asr.html in Resources */ = {isa = PBXBuildFile; fileRef = DCED9BAF2547F23900ACB166 /* asr.html */; };
+		DCED9BD02547F23A00ACB166 /* img_2_men.pdf in Resources */ = {isa = PBXBuildFile; fileRef = DCED9BB02547F23900ACB166 /* img_2_men.pdf */; };
+		DCED9BD12547F23A00ACB166 /* tahorat.html in Resources */ = {isa = PBXBuildFile; fileRef = DCED9BB12547F23900ACB166 /* tahorat.html */; };
+		DCED9BD22547F23A00ACB166 /* dzuhr.html in Resources */ = {isa = PBXBuildFile; fileRef = DCED9BB22547F23900ACB166 /* dzuhr.html */; };
+		DCED9BD32547F23A00ACB166 /* img_3_men.pdf in Resources */ = {isa = PBXBuildFile; fileRef = DCED9BB32547F23900ACB166 /* img_3_men.pdf */; };
+		DCED9BD42547F23A00ACB166 /* isha.html in Resources */ = {isa = PBXBuildFile; fileRef = DCED9BB42547F23900ACB166 /* isha.html */; };
+		DCED9BD52547F23A00ACB166 /* img_6_men.pdf in Resources */ = {isa = PBXBuildFile; fileRef = DCED9BB52547F23900ACB166 /* img_6_men.pdf */; };
+		DCED9BD62547F23A00ACB166 /* img_2_women.pdf in Resources */ = {isa = PBXBuildFile; fileRef = DCED9BB62547F23900ACB166 /* img_2_women.pdf */; };
+		DCED9BD72547F23A00ACB166 /* img_4_women.pdf in Resources */ = {isa = PBXBuildFile; fileRef = DCED9BB72547F23900ACB166 /* img_4_women.pdf */; };
+		DCED9BD82547F23A00ACB166 /* azon.html in Resources */ = {isa = PBXBuildFile; fileRef = DCED9BB82547F23900ACB166 /* azon.html */; };
+		DCED9BD92547F23A00ACB166 /* img_3_women.pdf in Resources */ = {isa = PBXBuildFile; fileRef = DCED9BB92547F23900ACB166 /* img_3_women.pdf */; };
+		DCED9BDA2547F23A00ACB166 /* img_5_men.pdf in Resources */ = {isa = PBXBuildFile; fileRef = DCED9BBA2547F23900ACB166 /* img_5_men.pdf */; };
+		DCED9BDB2547F23A00ACB166 /* tahorat_8.pdf in Resources */ = {isa = PBXBuildFile; fileRef = DCED9BBB2547F23900ACB166 /* tahorat_8.pdf */; };
+		DCED9BDC2547F23A00ACB166 /* img_4_men.pdf in Resources */ = {isa = PBXBuildFile; fileRef = DCED9BBC2547F23900ACB166 /* img_4_men.pdf */; };
+		DCED9BDD2547F23A00ACB166 /* img_5_women.pdf in Resources */ = {isa = PBXBuildFile; fileRef = DCED9BBD2547F23900ACB166 /* img_5_women.pdf */; };
+		DCED9BDE2547F23A00ACB166 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCED9BBE2547F23900ACB166 /* Assets.xcassets */; };
+		DCED9BE12547F24600ACB166 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCED9BE02547F24600ACB166 /* AppDelegate.swift */; };
+		DCED9BEA2547F53600ACB166 /* ZikrlarCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DCED9BE82547F53600ACB166 /* ZikrlarCell.xib */; };
+		DCED9BEB2547F53600ACB166 /* ZikrlarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCED9BE92547F53600ACB166 /* ZikrlarCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2C893F6DA1850213FD01965C /* Pods-Islamic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Islamic.debug.xcconfig"; path = "Target Support Files/Pods-Islamic/Pods-Islamic.debug.xcconfig"; sourceTree = "<group>"; };
+		A8F72359520AFD6D18304DA0 /* Pods-Islamic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Islamic.release.xcconfig"; path = "Target Support Files/Pods-Islamic/Pods-Islamic.release.xcconfig"; sourceTree = "<group>"; };
+		AD128E1232E09167BD0ADDA4 /* Pods_Islamic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Islamic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCED9B622547F1CD00ACB166 /* Islamic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Islamic.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCED9B712547F1CE00ACB166 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DCED9B732547F1CE00ACB166 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DCED9B7D2547F20900ACB166 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		DCED9B812547F21800ACB166 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		DCED9B822547F21800ACB166 /* Database.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
+		DCED9B872547F22500ACB166 /* DuolarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DuolarController.swift; sourceTree = "<group>"; };
+		DCED9B882547F22500ACB166 /* Asmaul_Husna_Cell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Asmaul_Husna_Cell.swift; sourceTree = "<group>"; };
+		DCED9B892547F22500ACB166 /* Al-Jome_As-SahihController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Al-Jome_As-SahihController.swift"; sourceTree = "<group>"; };
+		DCED9B8A2547F22500ACB166 /* Zikrlar_Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Zikrlar_Controller.swift; sourceTree = "<group>"; };
+		DCED9B8B2547F22500ACB166 /* HomePageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePageController.swift; sourceTree = "<group>"; };
+		DCED9B8C2547F22500ACB166 /* NamozOqishniOrganamizController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NamozOqishniOrganamizController.swift; sourceTree = "<group>"; };
+		DCED9B8D2547F22500ACB166 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		DCED9B8E2547F22500ACB166 /* CalendarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
+		DCED9B8F2547F22500ACB166 /* Al-Jome_As-Sahih_Cell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Al-Jome_As-Sahih_Cell.swift"; sourceTree = "<group>"; };
+		DCED9B902547F22500ACB166 /* NamozVaqtlariController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NamozVaqtlariController.swift; sourceTree = "<group>"; };
+		DCED9B912547F22500ACB166 /* Asmaul_Husna_Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Asmaul_Husna_Controller.swift; sourceTree = "<group>"; };
+		DCED9B9F2547F23900ACB166 /* tahorat_3.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = tahorat_3.pdf; sourceTree = "<group>"; };
+		DCED9BA02547F23900ACB166 /* img_0_women.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = img_0_women.pdf; sourceTree = "<group>"; };
+		DCED9BA12547F23900ACB166 /* tahorat_2.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = tahorat_2.pdf; sourceTree = "<group>"; };
+		DCED9BA22547F23900ACB166 /* tahorat_0.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = tahorat_0.pdf; sourceTree = "<group>"; };
+		DCED9BA32547F23900ACB166 /* img_1_men.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = img_1_men.pdf; sourceTree = "<group>"; };
+		DCED9BA42547F23900ACB166 /* Muslim.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = Muslim.db; sourceTree = "<group>"; };
+		DCED9BA52547F23900ACB166 /* tahorat_1.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = tahorat_1.pdf; sourceTree = "<group>"; };
+		DCED9BA62547F23900ACB166 /* tahorat_5.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = tahorat_5.pdf; sourceTree = "<group>"; };
+		DCED9BA72547F23900ACB166 /* img_0_men.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = img_0_men.pdf; sourceTree = "<group>"; };
+		DCED9BA82547F23900ACB166 /* img_6_women.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = img_6_women.pdf; sourceTree = "<group>"; };
+		DCED9BA92547F23900ACB166 /* tahorat_4.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = tahorat_4.pdf; sourceTree = "<group>"; };
+		DCED9BAA2547F23900ACB166 /* fajr.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = fajr.html; sourceTree = "<group>"; };
+		DCED9BAB2547F23900ACB166 /* tahorat_6.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = tahorat_6.pdf; sourceTree = "<group>"; };
+		DCED9BAC2547F23900ACB166 /* tahorat_7.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = tahorat_7.pdf; sourceTree = "<group>"; };
+		DCED9BAD2547F23900ACB166 /* img_1_women.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = img_1_women.pdf; sourceTree = "<group>"; };
+		DCED9BAE2547F23900ACB166 /* maghrib.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = maghrib.html; sourceTree = "<group>"; };
+		DCED9BAF2547F23900ACB166 /* asr.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = asr.html; sourceTree = "<group>"; };
+		DCED9BB02547F23900ACB166 /* img_2_men.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = img_2_men.pdf; sourceTree = "<group>"; };
+		DCED9BB12547F23900ACB166 /* tahorat.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = tahorat.html; sourceTree = "<group>"; };
+		DCED9BB22547F23900ACB166 /* dzuhr.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = dzuhr.html; sourceTree = "<group>"; };
+		DCED9BB32547F23900ACB166 /* img_3_men.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = img_3_men.pdf; sourceTree = "<group>"; };
+		DCED9BB42547F23900ACB166 /* isha.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = isha.html; sourceTree = "<group>"; };
+		DCED9BB52547F23900ACB166 /* img_6_men.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = img_6_men.pdf; sourceTree = "<group>"; };
+		DCED9BB62547F23900ACB166 /* img_2_women.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = img_2_women.pdf; sourceTree = "<group>"; };
+		DCED9BB72547F23900ACB166 /* img_4_women.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = img_4_women.pdf; sourceTree = "<group>"; };
+		DCED9BB82547F23900ACB166 /* azon.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = azon.html; sourceTree = "<group>"; };
+		DCED9BB92547F23900ACB166 /* img_3_women.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = img_3_women.pdf; sourceTree = "<group>"; };
+		DCED9BBA2547F23900ACB166 /* img_5_men.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = img_5_men.pdf; sourceTree = "<group>"; };
+		DCED9BBB2547F23900ACB166 /* tahorat_8.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = tahorat_8.pdf; sourceTree = "<group>"; };
+		DCED9BBC2547F23900ACB166 /* img_4_men.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = img_4_men.pdf; sourceTree = "<group>"; };
+		DCED9BBD2547F23900ACB166 /* img_5_women.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = img_5_women.pdf; sourceTree = "<group>"; };
+		DCED9BBE2547F23900ACB166 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DCED9BE02547F24600ACB166 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DCED9BE82547F53600ACB166 /* ZikrlarCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZikrlarCell.xib; sourceTree = "<group>"; };
+		DCED9BE92547F53600ACB166 /* ZikrlarCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZikrlarCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DCED9B5F2547F1CD00ACB166 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				631860B6CD2E73FBAAF2EEA2 /* Pods_Islamic.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		192AF0E885C4E001C02C2730 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AD128E1232E09167BD0ADDA4 /* Pods_Islamic.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C7747B42538923C55B5D7B1A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2C893F6DA1850213FD01965C /* Pods-Islamic.debug.xcconfig */,
+				A8F72359520AFD6D18304DA0 /* Pods-Islamic.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		DCED9B592547F1CD00ACB166 = {
+			isa = PBXGroup;
+			children = (
+				DCED9B642547F1CD00ACB166 /* Islamic */,
+				DCED9B632547F1CD00ACB166 /* Products */,
+				C7747B42538923C55B5D7B1A /* Pods */,
+				192AF0E885C4E001C02C2730 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		DCED9B632547F1CD00ACB166 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DCED9B622547F1CD00ACB166 /* Islamic.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DCED9B642547F1CD00ACB166 /* Islamic */ = {
+			isa = PBXGroup;
+			children = (
+				DCED9BE02547F24600ACB166 /* AppDelegate.swift */,
+				DCED9BBE2547F23900ACB166 /* Assets.xcassets */,
+				DCED9B9E2547F23900ACB166 /* Supporting files */,
+				DCED9B862547F22500ACB166 /* Controller */,
+				DCED9B802547F21800ACB166 /* Model */,
+				DCED9BE62547F52000ACB166 /* View */,
+				DCED9B732547F1CE00ACB166 /* Info.plist */,
+			);
+			path = Islamic;
+			sourceTree = "<group>";
+		};
+		DCED9B802547F21800ACB166 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DCED9B812547F21800ACB166 /* Extensions.swift */,
+				DCED9B822547F21800ACB166 /* Database.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DCED9B862547F22500ACB166 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DCED9B872547F22500ACB166 /* DuolarController.swift */,
+				DCED9B882547F22500ACB166 /* Asmaul_Husna_Cell.swift */,
+				DCED9B892547F22500ACB166 /* Al-Jome_As-SahihController.swift */,
+				DCED9B8A2547F22500ACB166 /* Zikrlar_Controller.swift */,
+				DCED9B8B2547F22500ACB166 /* HomePageController.swift */,
+				DCED9B8C2547F22500ACB166 /* NamozOqishniOrganamizController.swift */,
+				DCED9B8D2547F22500ACB166 /* WebViewController.swift */,
+				DCED9B8E2547F22500ACB166 /* CalendarViewController.swift */,
+				DCED9B8F2547F22500ACB166 /* Al-Jome_As-Sahih_Cell.swift */,
+				DCED9B902547F22500ACB166 /* NamozVaqtlariController.swift */,
+				DCED9B912547F22500ACB166 /* Asmaul_Husna_Controller.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		DCED9B9E2547F23900ACB166 /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				DCED9B9F2547F23900ACB166 /* tahorat_3.pdf */,
+				DCED9BA02547F23900ACB166 /* img_0_women.pdf */,
+				DCED9BA12547F23900ACB166 /* tahorat_2.pdf */,
+				DCED9BA22547F23900ACB166 /* tahorat_0.pdf */,
+				DCED9BA32547F23900ACB166 /* img_1_men.pdf */,
+				DCED9BA42547F23900ACB166 /* Muslim.db */,
+				DCED9BA52547F23900ACB166 /* tahorat_1.pdf */,
+				DCED9BA62547F23900ACB166 /* tahorat_5.pdf */,
+				DCED9BA72547F23900ACB166 /* img_0_men.pdf */,
+				DCED9BA82547F23900ACB166 /* img_6_women.pdf */,
+				DCED9BA92547F23900ACB166 /* tahorat_4.pdf */,
+				DCED9BAA2547F23900ACB166 /* fajr.html */,
+				DCED9BAB2547F23900ACB166 /* tahorat_6.pdf */,
+				DCED9BAC2547F23900ACB166 /* tahorat_7.pdf */,
+				DCED9BAD2547F23900ACB166 /* img_1_women.pdf */,
+				DCED9BAE2547F23900ACB166 /* maghrib.html */,
+				DCED9BAF2547F23900ACB166 /* asr.html */,
+				DCED9BB02547F23900ACB166 /* img_2_men.pdf */,
+				DCED9BB12547F23900ACB166 /* tahorat.html */,
+				DCED9BB22547F23900ACB166 /* dzuhr.html */,
+				DCED9BB32547F23900ACB166 /* img_3_men.pdf */,
+				DCED9BB42547F23900ACB166 /* isha.html */,
+				DCED9BB52547F23900ACB166 /* img_6_men.pdf */,
+				DCED9BB62547F23900ACB166 /* img_2_women.pdf */,
+				DCED9BB72547F23900ACB166 /* img_4_women.pdf */,
+				DCED9BB82547F23900ACB166 /* azon.html */,
+				DCED9BB92547F23900ACB166 /* img_3_women.pdf */,
+				DCED9BBA2547F23900ACB166 /* img_5_men.pdf */,
+				DCED9BBB2547F23900ACB166 /* tahorat_8.pdf */,
+				DCED9BBC2547F23900ACB166 /* img_4_men.pdf */,
+				DCED9BBD2547F23900ACB166 /* img_5_women.pdf */,
+			);
+			path = "Supporting files";
+			sourceTree = "<group>";
+		};
+		DCED9BE62547F52000ACB166 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DCED9BE72547F53600ACB166 /* Zikrlar Cell */,
+				DCED9B702547F1CE00ACB166 /* LaunchScreen.storyboard */,
+				DCED9B7D2547F20900ACB166 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DCED9BE72547F53600ACB166 /* Zikrlar Cell */ = {
+			isa = PBXGroup;
+			children = (
+				DCED9BE82547F53600ACB166 /* ZikrlarCell.xib */,
+				DCED9BE92547F53600ACB166 /* ZikrlarCell.swift */,
+			);
+			path = "Zikrlar Cell";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DCED9B612547F1CD00ACB166 /* Islamic */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DCED9B762547F1CE00ACB166 /* Build configuration list for PBXNativeTarget "Islamic" */;
+			buildPhases = (
+				70C5F0A6CCADB53D1CEEF675 /* [CP] Check Pods Manifest.lock */,
+				DCED9B5E2547F1CD00ACB166 /* Sources */,
+				DCED9B5F2547F1CD00ACB166 /* Frameworks */,
+				DCED9B602547F1CD00ACB166 /* Resources */,
+				21E5CDBF1F83AF921F25CA9F /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Islamic;
+			productName = Islamic;
+			productReference = DCED9B622547F1CD00ACB166 /* Islamic.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DCED9B5A2547F1CD00ACB166 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					DCED9B612547F1CD00ACB166 = {
+						CreatedOnToolsVersion = 12.0.1;
+					};
+				};
+			};
+			buildConfigurationList = DCED9B5D2547F1CD00ACB166 /* Build configuration list for PBXProject "Islamic" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DCED9B592547F1CD00ACB166;
+			productRefGroup = DCED9B632547F1CD00ACB166 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DCED9B612547F1CD00ACB166 /* Islamic */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DCED9B602547F1CD00ACB166 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCED9BC62547F23A00ACB166 /* tahorat_5.pdf in Resources */,
+				DCED9BC02547F23A00ACB166 /* img_0_women.pdf in Resources */,
+				DCED9BD32547F23A00ACB166 /* img_3_men.pdf in Resources */,
+				DCED9BC82547F23A00ACB166 /* img_6_women.pdf in Resources */,
+				DCED9BDC2547F23A00ACB166 /* img_4_men.pdf in Resources */,
+				DCED9BCB2547F23A00ACB166 /* tahorat_6.pdf in Resources */,
+				DCED9BDE2547F23A00ACB166 /* Assets.xcassets in Resources */,
+				DCED9BC32547F23A00ACB166 /* img_1_men.pdf in Resources */,
+				DCED9BEA2547F53600ACB166 /* ZikrlarCell.xib in Resources */,
+				DCED9BC92547F23A00ACB166 /* tahorat_4.pdf in Resources */,
+				DCED9BD22547F23A00ACB166 /* dzuhr.html in Resources */,
+				DCED9BC12547F23A00ACB166 /* tahorat_2.pdf in Resources */,
+				DCED9BC52547F23A00ACB166 /* tahorat_1.pdf in Resources */,
+				DCED9BC72547F23A00ACB166 /* img_0_men.pdf in Resources */,
+				DCED9BCE2547F23A00ACB166 /* maghrib.html in Resources */,
+				DCED9BDB2547F23A00ACB166 /* tahorat_8.pdf in Resources */,
+				DCED9BD62547F23A00ACB166 /* img_2_women.pdf in Resources */,
+				DCED9BBF2547F23A00ACB166 /* tahorat_3.pdf in Resources */,
+				DCED9BC42547F23A00ACB166 /* Muslim.db in Resources */,
+				DCED9BC22547F23A00ACB166 /* tahorat_0.pdf in Resources */,
+				DCED9BD82547F23A00ACB166 /* azon.html in Resources */,
+				DCED9BCD2547F23A00ACB166 /* img_1_women.pdf in Resources */,
+				DCED9BD72547F23A00ACB166 /* img_4_women.pdf in Resources */,
+				DCED9BD12547F23A00ACB166 /* tahorat.html in Resources */,
+				DCED9BD42547F23A00ACB166 /* isha.html in Resources */,
+				DCED9BD92547F23A00ACB166 /* img_3_women.pdf in Resources */,
+				DCED9B722547F1CE00ACB166 /* LaunchScreen.storyboard in Resources */,
+				DCED9BD52547F23A00ACB166 /* img_6_men.pdf in Resources */,
+				DCED9B7E2547F20900ACB166 /* Main.storyboard in Resources */,
+				DCED9BDA2547F23A00ACB166 /* img_5_men.pdf in Resources */,
+				DCED9BCF2547F23A00ACB166 /* asr.html in Resources */,
+				DCED9BCC2547F23A00ACB166 /* tahorat_7.pdf in Resources */,
+				DCED9BD02547F23A00ACB166 /* img_2_men.pdf in Resources */,
+				DCED9BDD2547F23A00ACB166 /* img_5_women.pdf in Resources */,
+				DCED9BCA2547F23A00ACB166 /* fajr.html in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		21E5CDBF1F83AF921F25CA9F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Islamic/Pods-Islamic-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Islamic/Pods-Islamic-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Islamic/Pods-Islamic-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		70C5F0A6CCADB53D1CEEF675 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Islamic-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DCED9B5E2547F1CD00ACB166 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCED9B992547F22500ACB166 /* CalendarViewController.swift in Sources */,
+				DCED9B9C2547F22500ACB166 /* Asmaul_Husna_Controller.swift in Sources */,
+				DCED9B922547F22500ACB166 /* DuolarController.swift in Sources */,
+				DCED9B9A2547F22500ACB166 /* Al-Jome_As-Sahih_Cell.swift in Sources */,
+				DCED9BE12547F24600ACB166 /* AppDelegate.swift in Sources */,
+				DCED9B982547F22500ACB166 /* WebViewController.swift in Sources */,
+				DCED9B962547F22500ACB166 /* HomePageController.swift in Sources */,
+				DCED9B9B2547F22500ACB166 /* NamozVaqtlariController.swift in Sources */,
+				DCED9B842547F21800ACB166 /* Database.swift in Sources */,
+				DCED9B932547F22500ACB166 /* Asmaul_Husna_Cell.swift in Sources */,
+				DCED9BEB2547F53600ACB166 /* ZikrlarCell.swift in Sources */,
+				DCED9B972547F22500ACB166 /* NamozOqishniOrganamizController.swift in Sources */,
+				DCED9B942547F22500ACB166 /* Al-Jome_As-SahihController.swift in Sources */,
+				DCED9B832547F21800ACB166 /* Extensions.swift in Sources */,
+				DCED9B952547F22500ACB166 /* Zikrlar_Controller.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DCED9B702547F1CE00ACB166 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DCED9B712547F1CE00ACB166 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DCED9B742547F1CE00ACB166 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DCED9B752547F1CE00ACB166 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DCED9B772547F1CE00ACB166 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C893F6DA1850213FD01965C /* Pods-Islamic.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 35PVF99Y92;
+				INFOPLIST_FILE = Islamic/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jokecoder.Islamic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DCED9B782547F1CE00ACB166 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A8F72359520AFD6D18304DA0 /* Pods-Islamic.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 35PVF99Y92;
+				INFOPLIST_FILE = Islamic/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jokecoder.Islamic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DCED9B5D2547F1CD00ACB166 /* Build configuration list for PBXProject "Islamic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCED9B742547F1CE00ACB166 /* Debug */,
+				DCED9B752547F1CE00ACB166 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DCED9B762547F1CE00ACB166 /* Build configuration list for PBXNativeTarget "Islamic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCED9B772547F1CE00ACB166 /* Debug */,
+				DCED9B782547F1CE00ACB166 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DCED9B5A2547F1CD00ACB166 /* Project object */;
+}

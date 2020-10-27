@@ -1,0 +1,678 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		05011246D096BB19DD247F51D8BF2DEA /* DateUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D400863C764B5E981DF589D79C9C89 /* DateUtilities.swift */; };
+		09842FE95DF607AFA535E8E54847D6ED /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		0BBED1C58B627C40E928603E40112406 /* PrayerAdjustment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EB102BFEAD0F4D933D80BDFBB53F267 /* PrayerAdjustment.swift */; };
+		224A80F97D98A92D83AEE4DE9E4286A5 /* MathUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0FEA3881A809BA42182384FFD2AB96 /* MathUtilities.swift */; };
+		2288F8F03EB591239F416943551C0E3E /* Adhan.h in Headers */ = {isa = PBXBuildFile; fileRef = 76206D17EBF62ABD74F0FB557614CB20 /* Adhan.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2A936DF4347FD9E0283DCE4B31EFD8BE /* Prayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32E63785DFBE3C5D1EF5024B38D8691 /* Prayer.swift */; };
+		2FA9098DB776C2D25842AAF92E930267 /* Madhab.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBA8B6355222135FDD9A735EDF22001 /* Madhab.swift */; };
+		335788A25F2705411673CB3BF3CC414F /* Coordinates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D4987A3A7892B89D34D38C32D9F7F2 /* Coordinates.swift */; };
+		345788F31CC5792767FFB506EA2724DC /* Angle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556A359E0378259A9D6AB40EDCE7BC0B /* Angle.swift */; };
+		3598BB8400603AEB376294DC42BC4670 /* HighAltitudeRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C86ED76FB61967EB326861A2FE341A /* HighAltitudeRule.swift */; };
+		4054D1061D40EF50FA4B68C6DCDBA92F /* PrayerTimes.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8AB0A4399856135B57059F4D93C452D /* PrayerTimes.swift */; };
+		44C8CB86AAE030BE22E3DA6D89F50756 /* Pods-Islamic-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F5660519E532E7EEAAB67B4C104E09A2 /* Pods-Islamic-dummy.m */; };
+		61A2359B36B93042BAC197D8C1BC93BD /* Astronomical.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956F8CEFF7EE160F32125AA447AA507F /* Astronomical.swift */; };
+		6C198224464849728EA3B4DBF103C929 /* Qibla.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD19E95389022CFAF50023A93739D43 /* Qibla.swift */; };
+		8015F0EE56C3F5BCD17A72F12A7B4FFA /* AdhanObjc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C658895FD0974522D6EC57770233384 /* AdhanObjc.swift */; };
+		9571D22097299BF01C6F577D95B95D71 /* Adhan-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 50EAE7DC83739B8E7486FE8A72D1AA29 /* Adhan-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		971EE934E4EE5B0FFB3E195DEBD81693 /* Minute.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5853BCA705F6EE11A5FAA0ABBBEDA21 /* Minute.swift */; };
+		A148CBDCDC08C90C204BAA1CAA8F54EB /* Adhan-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 98E459FDC32432C3CE5CD3106D421CAC /* Adhan-dummy.m */; };
+		A3A43D82B09790CEAF400D7D9E78F226 /* CalculationParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E57CE362EF9F00DB8FF455D0F00AC8 /* CalculationParameters.swift */; };
+		AA539D0046B994150AE388B773DD41AC /* Pods-Islamic-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2324D90917B0F77AFE3607F1456FEA5F /* Pods-Islamic-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C7996EE4ED261E5721A314911AE76D04 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		D091669405FB455FD9B798C59367AF02 /* SolarCoordinates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7ADAC14BFD74CB2E937F603FF443F2 /* SolarCoordinates.swift */; };
+		E19481B0B67ED48B5E5E6E3292902562 /* SolarTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90CF68E3B6760935F736BFC0950F5005 /* SolarTime.swift */; };
+		EF1D5B037941BA356CB14F1DEE3DB8C3 /* SunnahTimes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E5DB6F5D974029B36BEB112B2DE73A2 /* SunnahTimes.swift */; };
+		F0CAF1547603C709A63BF3C51BF01A12 /* CalculationMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = F099B30E2CD582A6DC6284EE07AF5F40 /* CalculationMethod.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F7D2E90BC7220626A6C80BEAFB24CC70 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A9B1253A540696DA809B405BCB6B5D89;
+			remoteInfo = Adhan;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		019DC680A0B009484C42BAEF5B3511DA /* Pods-Islamic-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Islamic-Info.plist"; sourceTree = "<group>"; };
+		04E57CE362EF9F00DB8FF455D0F00AC8 /* CalculationParameters.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CalculationParameters.swift; path = Sources/Models/CalculationParameters.swift; sourceTree = "<group>"; };
+		1DD19E95389022CFAF50023A93739D43 /* Qibla.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Qibla.swift; path = Sources/Qibla.swift; sourceTree = "<group>"; };
+		1EB102BFEAD0F4D933D80BDFBB53F267 /* PrayerAdjustment.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PrayerAdjustment.swift; path = Sources/Models/PrayerAdjustment.swift; sourceTree = "<group>"; };
+		2324D90917B0F77AFE3607F1456FEA5F /* Pods-Islamic-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Islamic-umbrella.h"; sourceTree = "<group>"; };
+		26C86ED76FB61967EB326861A2FE341A /* HighAltitudeRule.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HighAltitudeRule.swift; path = Sources/Models/HighAltitudeRule.swift; sourceTree = "<group>"; };
+		27CDE3C9ADD21DAA31869A28D05E581F /* Pods-Islamic-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Islamic-acknowledgements.plist"; sourceTree = "<group>"; };
+		2C658895FD0974522D6EC57770233384 /* AdhanObjc.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AdhanObjc.swift; path = Sources/AdhanObjc.swift; sourceTree = "<group>"; };
+		2F0FEA3881A809BA42182384FFD2AB96 /* MathUtilities.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MathUtilities.swift; path = Sources/Extensions/MathUtilities.swift; sourceTree = "<group>"; };
+		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		32D4987A3A7892B89D34D38C32D9F7F2 /* Coordinates.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Coordinates.swift; path = Sources/Models/Coordinates.swift; sourceTree = "<group>"; };
+		4FC046899CCDC24621934826CA0EFF64 /* Pods-Islamic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Islamic.release.xcconfig"; sourceTree = "<group>"; };
+		50EAE7DC83739B8E7486FE8A72D1AA29 /* Adhan-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Adhan-umbrella.h"; sourceTree = "<group>"; };
+		52B3FDAF4478A1011A8AF00219DCBED5 /* Adhan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Adhan.debug.xcconfig; sourceTree = "<group>"; };
+		556A359E0378259A9D6AB40EDCE7BC0B /* Angle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Angle.swift; path = Sources/Units/Angle.swift; sourceTree = "<group>"; };
+		58D400863C764B5E981DF589D79C9C89 /* DateUtilities.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DateUtilities.swift; path = Sources/Extensions/DateUtilities.swift; sourceTree = "<group>"; };
+		73E2EBD58D289ABE9BECB53F187F52AD /* Adhan-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Adhan-Info.plist"; sourceTree = "<group>"; };
+		76206D17EBF62ABD74F0FB557614CB20 /* Adhan.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Adhan.h; path = Sources/Adhan.h; sourceTree = "<group>"; };
+		7C048821436852E27B5CFC5E6D45252D /* Pods_Islamic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Islamic.framework; path = "Pods-Islamic.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E187635D711EC155F3C7FE194AE4FF9 /* Pods-Islamic-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Islamic-frameworks.sh"; sourceTree = "<group>"; };
+		8A7ADAC14BFD74CB2E937F603FF443F2 /* SolarCoordinates.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SolarCoordinates.swift; path = Sources/Astronomy/SolarCoordinates.swift; sourceTree = "<group>"; };
+		90CF68E3B6760935F736BFC0950F5005 /* SolarTime.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SolarTime.swift; path = Sources/Astronomy/SolarTime.swift; sourceTree = "<group>"; };
+		93398C1B84D8C755CE017A85E9125EDA /* Pods-Islamic.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Islamic.modulemap"; sourceTree = "<group>"; };
+		956F8CEFF7EE160F32125AA447AA507F /* Astronomical.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Astronomical.swift; path = Sources/Astronomy/Astronomical.swift; sourceTree = "<group>"; };
+		98E459FDC32432C3CE5CD3106D421CAC /* Adhan-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Adhan-dummy.m"; sourceTree = "<group>"; };
+		9A0D8CC520BF80EE1DC6F2178AE71AC1 /* Pods-Islamic-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Islamic-acknowledgements.markdown"; sourceTree = "<group>"; };
+		9D3224C566BF319FA6B0643B3A976B8D /* Adhan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Adhan.release.xcconfig; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9E278AC53BEC6D55411FE9AE4C14226D /* Pods-Islamic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Islamic.debug.xcconfig"; sourceTree = "<group>"; };
+		9E5DB6F5D974029B36BEB112B2DE73A2 /* SunnahTimes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SunnahTimes.swift; path = Sources/SunnahTimes.swift; sourceTree = "<group>"; };
+		A32E63785DFBE3C5D1EF5024B38D8691 /* Prayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Prayer.swift; path = Sources/Models/Prayer.swift; sourceTree = "<group>"; };
+		A65E5C3712CFAA5301188F648473C770 /* Adhan.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Adhan.modulemap; sourceTree = "<group>"; };
+		A7E134AC6A4763F8ABB749D6898CADEB /* Adhan-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Adhan-prefix.pch"; sourceTree = "<group>"; };
+		AEBA8B6355222135FDD9A735EDF22001 /* Madhab.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Madhab.swift; path = Sources/Models/Madhab.swift; sourceTree = "<group>"; };
+		AF0A8C5F6ECD4F09C906608F0027BADD /* Adhan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Adhan.framework; path = Adhan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5853BCA705F6EE11A5FAA0ABBBEDA21 /* Minute.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Minute.swift; path = Sources/Units/Minute.swift; sourceTree = "<group>"; };
+		E8AB0A4399856135B57059F4D93C452D /* PrayerTimes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PrayerTimes.swift; path = Sources/PrayerTimes.swift; sourceTree = "<group>"; };
+		F099B30E2CD582A6DC6284EE07AF5F40 /* CalculationMethod.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CalculationMethod.swift; path = Sources/Models/CalculationMethod.swift; sourceTree = "<group>"; };
+		F5660519E532E7EEAAB67B4C104E09A2 /* Pods-Islamic-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Islamic-dummy.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D0C9721A919CDCB949D3CA80C1DAA509 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09842FE95DF607AFA535E8E54847D6ED /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E338165CF9CD43A547B2A654F6114E95 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7996EE4ED261E5721A314911AE76D04 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2CD667B7BB9F488693C8FAB8EF7761F2 /* Adhan */ = {
+			isa = PBXGroup;
+			children = (
+				76206D17EBF62ABD74F0FB557614CB20 /* Adhan.h */,
+				2C658895FD0974522D6EC57770233384 /* AdhanObjc.swift */,
+				556A359E0378259A9D6AB40EDCE7BC0B /* Angle.swift */,
+				956F8CEFF7EE160F32125AA447AA507F /* Astronomical.swift */,
+				F099B30E2CD582A6DC6284EE07AF5F40 /* CalculationMethod.swift */,
+				04E57CE362EF9F00DB8FF455D0F00AC8 /* CalculationParameters.swift */,
+				32D4987A3A7892B89D34D38C32D9F7F2 /* Coordinates.swift */,
+				58D400863C764B5E981DF589D79C9C89 /* DateUtilities.swift */,
+				26C86ED76FB61967EB326861A2FE341A /* HighAltitudeRule.swift */,
+				AEBA8B6355222135FDD9A735EDF22001 /* Madhab.swift */,
+				2F0FEA3881A809BA42182384FFD2AB96 /* MathUtilities.swift */,
+				E5853BCA705F6EE11A5FAA0ABBBEDA21 /* Minute.swift */,
+				A32E63785DFBE3C5D1EF5024B38D8691 /* Prayer.swift */,
+				1EB102BFEAD0F4D933D80BDFBB53F267 /* PrayerAdjustment.swift */,
+				E8AB0A4399856135B57059F4D93C452D /* PrayerTimes.swift */,
+				1DD19E95389022CFAF50023A93739D43 /* Qibla.swift */,
+				8A7ADAC14BFD74CB2E937F603FF443F2 /* SolarCoordinates.swift */,
+				90CF68E3B6760935F736BFC0950F5005 /* SolarTime.swift */,
+				9E5DB6F5D974029B36BEB112B2DE73A2 /* SunnahTimes.swift */,
+				6900776BAD913202E8DAD7AEE41A5ECF /* Support Files */,
+			);
+			name = Adhan;
+			path = Adhan;
+			sourceTree = "<group>";
+		};
+		6900776BAD913202E8DAD7AEE41A5ECF /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A65E5C3712CFAA5301188F648473C770 /* Adhan.modulemap */,
+				98E459FDC32432C3CE5CD3106D421CAC /* Adhan-dummy.m */,
+				73E2EBD58D289ABE9BECB53F187F52AD /* Adhan-Info.plist */,
+				A7E134AC6A4763F8ABB749D6898CADEB /* Adhan-prefix.pch */,
+				50EAE7DC83739B8E7486FE8A72D1AA29 /* Adhan-umbrella.h */,
+				52B3FDAF4478A1011A8AF00219DCBED5 /* Adhan.debug.xcconfig */,
+				9D3224C566BF319FA6B0643B3A976B8D /* Adhan.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Adhan";
+			sourceTree = "<group>";
+		};
+		6B176AA20CC59B7E807F6E607BCACE00 /* Pods-Islamic */ = {
+			isa = PBXGroup;
+			children = (
+				93398C1B84D8C755CE017A85E9125EDA /* Pods-Islamic.modulemap */,
+				9A0D8CC520BF80EE1DC6F2178AE71AC1 /* Pods-Islamic-acknowledgements.markdown */,
+				27CDE3C9ADD21DAA31869A28D05E581F /* Pods-Islamic-acknowledgements.plist */,
+				F5660519E532E7EEAAB67B4C104E09A2 /* Pods-Islamic-dummy.m */,
+				7E187635D711EC155F3C7FE194AE4FF9 /* Pods-Islamic-frameworks.sh */,
+				019DC680A0B009484C42BAEF5B3511DA /* Pods-Islamic-Info.plist */,
+				2324D90917B0F77AFE3607F1456FEA5F /* Pods-Islamic-umbrella.h */,
+				9E278AC53BEC6D55411FE9AE4C14226D /* Pods-Islamic.debug.xcconfig */,
+				4FC046899CCDC24621934826CA0EFF64 /* Pods-Islamic.release.xcconfig */,
+			);
+			name = "Pods-Islamic";
+			path = "Target Support Files/Pods-Islamic";
+			sourceTree = "<group>";
+		};
+		6CCE31B4C389EDDC84752CD6B741110C /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6B176AA20CC59B7E807F6E607BCACE00 /* Pods-Islamic */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		BD9AB607D531D27D28CD2393FBADAB6B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2CD667B7BB9F488693C8FAB8EF7761F2 /* Adhan */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		CAD9379F8E41475DE83D8796706C889C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AF0A8C5F6ECD4F09C906608F0027BADD /* Adhan.framework */,
+				7C048821436852E27B5CFC5E6D45252D /* Pods_Islamic.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				BD9AB607D531D27D28CD2393FBADAB6B /* Pods */,
+				CAD9379F8E41475DE83D8796706C889C /* Products */,
+				6CCE31B4C389EDDC84752CD6B741110C /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		058A2CFD9DBC9FCBA7FE87BED7695106 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA539D0046B994150AE388B773DD41AC /* Pods-Islamic-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA67A9559FBF35DD1D74F9E273EBD749 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9571D22097299BF01C6F577D95B95D71 /* Adhan-umbrella.h in Headers */,
+				2288F8F03EB591239F416943551C0E3E /* Adhan.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		6188C90F08629DE9344BB871A9E7EA25 /* Pods-Islamic */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 035381FDF9355B642A9751A4E9888D0C /* Build configuration list for PBXNativeTarget "Pods-Islamic" */;
+			buildPhases = (
+				058A2CFD9DBC9FCBA7FE87BED7695106 /* Headers */,
+				12EC434EC1AA1EBB9CF606791D42DDC9 /* Sources */,
+				D0C9721A919CDCB949D3CA80C1DAA509 /* Frameworks */,
+				E9EA945CB0ACB33BF79C1C0A6EC7EB61 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				47A9046FC4590A108F6954CB06E5683B /* PBXTargetDependency */,
+			);
+			name = "Pods-Islamic";
+			productName = "Pods-Islamic";
+			productReference = 7C048821436852E27B5CFC5E6D45252D /* Pods_Islamic.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A9B1253A540696DA809B405BCB6B5D89 /* Adhan */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2301BCF08F89A993D3618682F996DF9B /* Build configuration list for PBXNativeTarget "Adhan" */;
+			buildPhases = (
+				DA67A9559FBF35DD1D74F9E273EBD749 /* Headers */,
+				B8304FABED27A1C6542CEA277E3F4363 /* Sources */,
+				E338165CF9CD43A547B2A654F6114E95 /* Frameworks */,
+				DCA77647C0B0B224D2ACADD4777A5877 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Adhan;
+			productName = Adhan;
+			productReference = AF0A8C5F6ECD4F09C906608F0027BADD /* Adhan.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = CAD9379F8E41475DE83D8796706C889C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A9B1253A540696DA809B405BCB6B5D89 /* Adhan */,
+				6188C90F08629DE9344BB871A9E7EA25 /* Pods-Islamic */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DCA77647C0B0B224D2ACADD4777A5877 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9EA945CB0ACB33BF79C1C0A6EC7EB61 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		12EC434EC1AA1EBB9CF606791D42DDC9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44C8CB86AAE030BE22E3DA6D89F50756 /* Pods-Islamic-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8304FABED27A1C6542CEA277E3F4363 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A148CBDCDC08C90C204BAA1CAA8F54EB /* Adhan-dummy.m in Sources */,
+				8015F0EE56C3F5BCD17A72F12A7B4FFA /* AdhanObjc.swift in Sources */,
+				345788F31CC5792767FFB506EA2724DC /* Angle.swift in Sources */,
+				61A2359B36B93042BAC197D8C1BC93BD /* Astronomical.swift in Sources */,
+				F0CAF1547603C709A63BF3C51BF01A12 /* CalculationMethod.swift in Sources */,
+				A3A43D82B09790CEAF400D7D9E78F226 /* CalculationParameters.swift in Sources */,
+				335788A25F2705411673CB3BF3CC414F /* Coordinates.swift in Sources */,
+				05011246D096BB19DD247F51D8BF2DEA /* DateUtilities.swift in Sources */,
+				3598BB8400603AEB376294DC42BC4670 /* HighAltitudeRule.swift in Sources */,
+				2FA9098DB776C2D25842AAF92E930267 /* Madhab.swift in Sources */,
+				224A80F97D98A92D83AEE4DE9E4286A5 /* MathUtilities.swift in Sources */,
+				971EE934E4EE5B0FFB3E195DEBD81693 /* Minute.swift in Sources */,
+				2A936DF4347FD9E0283DCE4B31EFD8BE /* Prayer.swift in Sources */,
+				0BBED1C58B627C40E928603E40112406 /* PrayerAdjustment.swift in Sources */,
+				4054D1061D40EF50FA4B68C6DCDBA92F /* PrayerTimes.swift in Sources */,
+				6C198224464849728EA3B4DBF103C929 /* Qibla.swift in Sources */,
+				D091669405FB455FD9B798C59367AF02 /* SolarCoordinates.swift in Sources */,
+				E19481B0B67ED48B5E5E6E3292902562 /* SolarTime.swift in Sources */,
+				EF1D5B037941BA356CB14F1DEE3DB8C3 /* SunnahTimes.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		47A9046FC4590A108F6954CB06E5683B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Adhan;
+			target = A9B1253A540696DA809B405BCB6B5D89 /* Adhan */;
+			targetProxy = F7D2E90BC7220626A6C80BEAFB24CC70 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		327E3532EC7370BDF212840AC4DBF394 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D3224C566BF319FA6B0643B3A976B8D /* Adhan.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Adhan/Adhan-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Adhan/Adhan-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Adhan/Adhan.modulemap";
+				PRODUCT_MODULE_NAME = Adhan;
+				PRODUCT_NAME = Adhan;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		502A24212E570983E885D8BA90981F4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 52B3FDAF4478A1011A8AF00219DCBED5 /* Adhan.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Adhan/Adhan-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Adhan/Adhan-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Adhan/Adhan.modulemap";
+				PRODUCT_MODULE_NAME = Adhan;
+				PRODUCT_NAME = Adhan;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6CC54970AC5BEA471CF3C3A45CE571CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4FC046899CCDC24621934826CA0EFF64 /* Pods-Islamic.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Islamic/Pods-Islamic-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Islamic/Pods-Islamic.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8A3650F6C8AC2EFFA814EA61C37468B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		90A33D5C80811EACCEED0415CF4C6233 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E278AC53BEC6D55411FE9AE4C14226D /* Pods-Islamic.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Islamic/Pods-Islamic-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Islamic/Pods-Islamic.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		AF1F8D2941B0228930706FA0F2C9BB78 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		035381FDF9355B642A9751A4E9888D0C /* Build configuration list for PBXNativeTarget "Pods-Islamic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				90A33D5C80811EACCEED0415CF4C6233 /* Debug */,
+				6CC54970AC5BEA471CF3C3A45CE571CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2301BCF08F89A993D3618682F996DF9B /* Build configuration list for PBXNativeTarget "Adhan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				502A24212E570983E885D8BA90981F4A /* Debug */,
+				327E3532EC7370BDF212840AC4DBF394 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A3650F6C8AC2EFFA814EA61C37468B1 /* Debug */,
+				AF1F8D2941B0228930706FA0F2C9BB78 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
