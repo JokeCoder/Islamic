@@ -1,10 +1,3 @@
-//
-//  AppDelegate.swift
-//  Islamic
-//
-//  Created by Asliddin Rasulov on 16/10/20.
-//
-
 import UIKit
 
 @main
