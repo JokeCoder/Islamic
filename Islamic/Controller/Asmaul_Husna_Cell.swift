@@ -1,11 +1,3 @@
-//
-//  Asmaul_Husna_Cell.swift
-//  Muslim UZ
-//
-//  Created by Asliddin Rasulov on 9/11/20.
-//  Copyright © 2020 Asliddin Rasulov. All rights reserved.
-//
-
 import UIKit
 
 class Asmaul_Husna_Cell: UITableViewCell {

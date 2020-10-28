@@ -1,11 +1,3 @@
-//
-//  Al-Jome_As-SahihController.swift
-//  Muslim UZ
-//
-//  Created by Asliddin Rasulov on 9/10/20.
-//  Copyright © 2020 Asliddin Rasulov. All rights reserved.
-//
-
 import UIKit
 import SQLite3
 
@@ -19,8 +11,8 @@ class Asmaul_Husna_Controller: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        names = fetch(name: "names", n: 1)
-        info = fetch(name: "names", n: 2)
+//        names = fetch(name: "names", n: 1)
+//        info = fetch(name: "names", n: 2)
     }
     
     @IBAction func back(_ sender: Any) {

@@ -1,11 +1,3 @@
-//
-//  PrayerTimes.swift
-//  Muslim UZ
-//
-//  Created by Asliddin Rasulov on 9/6/20.
-//  Copyright © 2020 Asliddin Rasulov. All rights reserved.
-//
-
 import UIKit
 import Adhan
 

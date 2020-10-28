@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		631860B6CD2E73FBAAF2EEA2 /* Pods_Islamic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD128E1232E09167BD0ADDA4 /* Pods_Islamic.framework */; };
+		8C1224CB25483783002FFFF7 /* TableInDuolarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1224CA25483783002FFFF7 /* TableInDuolarController.swift */; };
+		8C1224CE25483A52002FFFF7 /* CustomCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1224CD25483A52002FFFF7 /* CustomCells.swift */; };
+		8C7ADB81254801A100920E4D /* TongiVaTungiZikrlarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7ADB80254801A100920E4D /* TongiVaTungiZikrlarController.swift */; };
 		DCED9B722547F1CE00ACB166 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCED9B702547F1CE00ACB166 /* LaunchScreen.storyboard */; };
 		DCED9B7E2547F20900ACB166 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCED9B7D2547F20900ACB166 /* Main.storyboard */; };
 		DCED9B832547F21800ACB166 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCED9B812547F21800ACB166 /* Extensions.swift */; };
@@ -15,8 +18,8 @@
 		DCED9B922547F22500ACB166 /* DuolarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCED9B872547F22500ACB166 /* DuolarController.swift */; };
 		DCED9B932547F22500ACB166 /* Asmaul_Husna_Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCED9B882547F22500ACB166 /* Asmaul_Husna_Cell.swift */; };
 		DCED9B942547F22500ACB166 /* Al-Jome_As-SahihController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCED9B892547F22500ACB166 /* Al-Jome_As-SahihController.swift */; };
-		DCED9B952547F22500ACB166 /* Zikrlar_Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCED9B8A2547F22500ACB166 /* Zikrlar_Controller.swift */; };
-		DCED9B962547F22500ACB166 /* HomePageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCED9B8B2547F22500ACB166 /* HomePageController.swift */; };
+		DCED9B952547F22500ACB166 /* ZikrlarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCED9B8A2547F22500ACB166 /* ZikrlarController.swift */; };
+		DCED9B962547F22500ACB166 /* BoshSahifaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCED9B8B2547F22500ACB166 /* BoshSahifaController.swift */; };
 		DCED9B972547F22500ACB166 /* NamozOqishniOrganamizController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCED9B8C2547F22500ACB166 /* NamozOqishniOrganamizController.swift */; };
 		DCED9B982547F22500ACB166 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCED9B8D2547F22500ACB166 /* WebViewController.swift */; };
 		DCED9B992547F22500ACB166 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCED9B8E2547F22500ACB166 /* CalendarViewController.swift */; };
@@ -34,17 +37,17 @@
 		DCED9BC72547F23A00ACB166 /* img_0_men.pdf in Resources */ = {isa = PBXBuildFile; fileRef = DCED9BA72547F23900ACB166 /* img_0_men.pdf */; };
 		DCED9BC82547F23A00ACB166 /* img_6_women.pdf in Resources */ = {isa = PBXBuildFile; fileRef = DCED9BA82547F23900ACB166 /* img_6_women.pdf */; };
 		DCED9BC92547F23A00ACB166 /* tahorat_4.pdf in Resources */ = {isa = PBXBuildFile; fileRef = DCED9BA92547F23900ACB166 /* tahorat_4.pdf */; };
-		DCED9BCA2547F23A00ACB166 /* fajr.html in Resources */ = {isa = PBXBuildFile; fileRef = DCED9BAA2547F23900ACB166 /* fajr.html */; };
+		DCED9BCA2547F23A00ACB166 /* bomdod_namozi.html in Resources */ = {isa = PBXBuildFile; fileRef = DCED9BAA2547F23900ACB166 /* bomdod_namozi.html */; };
 		DCED9BCB2547F23A00ACB166 /* tahorat_6.pdf in Resources */ = {isa = PBXBuildFile; fileRef = DCED9BAB2547F23900ACB166 /* tahorat_6.pdf */; };
 		DCED9BCC2547F23A00ACB166 /* tahorat_7.pdf in Resources */ = {isa = PBXBuildFile; fileRef = DCED9BAC2547F23900ACB166 /* tahorat_7.pdf */; };
 		DCED9BCD2547F23A00ACB166 /* img_1_women.pdf in Resources */ = {isa = PBXBuildFile; fileRef = DCED9BAD2547F23900ACB166 /* img_1_women.pdf */; };
-		DCED9BCE2547F23A00ACB166 /* maghrib.html in Resources */ = {isa = PBXBuildFile; fileRef = DCED9BAE2547F23900ACB166 /* maghrib.html */; };
-		DCED9BCF2547F23A00ACB166 /* asr.html in Resources */ = {isa = PBXBuildFile; fileRef = DCED9BAF2547F23900ACB166 /* asr.html */; };
+		DCED9BCE2547F23A00ACB166 /* shom_namozi.html in Resources */ = {isa = PBXBuildFile; fileRef = DCED9BAE2547F23900ACB166 /* shom_namozi.html */; };
+		DCED9BCF2547F23A00ACB166 /* asr_namozi.html in Resources */ = {isa = PBXBuildFile; fileRef = DCED9BAF2547F23900ACB166 /* asr_namozi.html */; };
 		DCED9BD02547F23A00ACB166 /* img_2_men.pdf in Resources */ = {isa = PBXBuildFile; fileRef = DCED9BB02547F23900ACB166 /* img_2_men.pdf */; };
-		DCED9BD12547F23A00ACB166 /* tahorat.html in Resources */ = {isa = PBXBuildFile; fileRef = DCED9BB12547F23900ACB166 /* tahorat.html */; };
-		DCED9BD22547F23A00ACB166 /* dzuhr.html in Resources */ = {isa = PBXBuildFile; fileRef = DCED9BB22547F23900ACB166 /* dzuhr.html */; };
+		DCED9BD12547F23A00ACB166 /* tahorat_olish.html in Resources */ = {isa = PBXBuildFile; fileRef = DCED9BB12547F23900ACB166 /* tahorat_olish.html */; };
+		DCED9BD22547F23A00ACB166 /* peshin_namozi.html in Resources */ = {isa = PBXBuildFile; fileRef = DCED9BB22547F23900ACB166 /* peshin_namozi.html */; };
 		DCED9BD32547F23A00ACB166 /* img_3_men.pdf in Resources */ = {isa = PBXBuildFile; fileRef = DCED9BB32547F23900ACB166 /* img_3_men.pdf */; };
-		DCED9BD42547F23A00ACB166 /* isha.html in Resources */ = {isa = PBXBuildFile; fileRef = DCED9BB42547F23900ACB166 /* isha.html */; };
+		DCED9BD42547F23A00ACB166 /* xufton_namozi.html in Resources */ = {isa = PBXBuildFile; fileRef = DCED9BB42547F23900ACB166 /* xufton_namozi.html */; };
 		DCED9BD52547F23A00ACB166 /* img_6_men.pdf in Resources */ = {isa = PBXBuildFile; fileRef = DCED9BB52547F23900ACB166 /* img_6_men.pdf */; };
 		DCED9BD62547F23A00ACB166 /* img_2_women.pdf in Resources */ = {isa = PBXBuildFile; fileRef = DCED9BB62547F23900ACB166 /* img_2_women.pdf */; };
 		DCED9BD72547F23A00ACB166 /* img_4_women.pdf in Resources */ = {isa = PBXBuildFile; fileRef = DCED9BB72547F23900ACB166 /* img_4_women.pdf */; };
@@ -62,6 +65,9 @@
 
 /* Begin PBXFileReference section */
 		2C893F6DA1850213FD01965C /* Pods-Islamic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Islamic.debug.xcconfig"; path = "Target Support Files/Pods-Islamic/Pods-Islamic.debug.xcconfig"; sourceTree = "<group>"; };
+		8C1224CA25483783002FFFF7 /* TableInDuolarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableInDuolarController.swift; sourceTree = "<group>"; };
+		8C1224CD25483A52002FFFF7 /* CustomCells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCells.swift; sourceTree = "<group>"; };
+		8C7ADB80254801A100920E4D /* TongiVaTungiZikrlarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TongiVaTungiZikrlarController.swift; sourceTree = "<group>"; };
 		A8F72359520AFD6D18304DA0 /* Pods-Islamic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Islamic.release.xcconfig"; path = "Target Support Files/Pods-Islamic/Pods-Islamic.release.xcconfig"; sourceTree = "<group>"; };
 		AD128E1232E09167BD0ADDA4 /* Pods_Islamic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Islamic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCED9B622547F1CD00ACB166 /* Islamic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Islamic.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -73,8 +79,8 @@
 		DCED9B872547F22500ACB166 /* DuolarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DuolarController.swift; sourceTree = "<group>"; };
 		DCED9B882547F22500ACB166 /* Asmaul_Husna_Cell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Asmaul_Husna_Cell.swift; sourceTree = "<group>"; };
 		DCED9B892547F22500ACB166 /* Al-Jome_As-SahihController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Al-Jome_As-SahihController.swift"; sourceTree = "<group>"; };
-		DCED9B8A2547F22500ACB166 /* Zikrlar_Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Zikrlar_Controller.swift; sourceTree = "<group>"; };
-		DCED9B8B2547F22500ACB166 /* HomePageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePageController.swift; sourceTree = "<group>"; };
+		DCED9B8A2547F22500ACB166 /* ZikrlarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZikrlarController.swift; sourceTree = "<group>"; };
+		DCED9B8B2547F22500ACB166 /* BoshSahifaController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoshSahifaController.swift; sourceTree = "<group>"; };
 		DCED9B8C2547F22500ACB166 /* NamozOqishniOrganamizController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NamozOqishniOrganamizController.swift; sourceTree = "<group>"; };
 		DCED9B8D2547F22500ACB166 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		DCED9B8E2547F22500ACB166 /* CalendarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
@@ -92,17 +98,17 @@
 		DCED9BA72547F23900ACB166 /* img_0_men.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = img_0_men.pdf; sourceTree = "<group>"; };
 		DCED9BA82547F23900ACB166 /* img_6_women.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = img_6_women.pdf; sourceTree = "<group>"; };
 		DCED9BA92547F23900ACB166 /* tahorat_4.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = tahorat_4.pdf; sourceTree = "<group>"; };
-		DCED9BAA2547F23900ACB166 /* fajr.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = fajr.html; sourceTree = "<group>"; };
+		DCED9BAA2547F23900ACB166 /* bomdod_namozi.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = bomdod_namozi.html; sourceTree = "<group>"; };
 		DCED9BAB2547F23900ACB166 /* tahorat_6.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = tahorat_6.pdf; sourceTree = "<group>"; };
 		DCED9BAC2547F23900ACB166 /* tahorat_7.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = tahorat_7.pdf; sourceTree = "<group>"; };
 		DCED9BAD2547F23900ACB166 /* img_1_women.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = img_1_women.pdf; sourceTree = "<group>"; };
-		DCED9BAE2547F23900ACB166 /* maghrib.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = maghrib.html; sourceTree = "<group>"; };
-		DCED9BAF2547F23900ACB166 /* asr.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = asr.html; sourceTree = "<group>"; };
+		DCED9BAE2547F23900ACB166 /* shom_namozi.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = shom_namozi.html; sourceTree = "<group>"; };
+		DCED9BAF2547F23900ACB166 /* asr_namozi.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = asr_namozi.html; sourceTree = "<group>"; };
 		DCED9BB02547F23900ACB166 /* img_2_men.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = img_2_men.pdf; sourceTree = "<group>"; };
-		DCED9BB12547F23900ACB166 /* tahorat.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = tahorat.html; sourceTree = "<group>"; };
-		DCED9BB22547F23900ACB166 /* dzuhr.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = dzuhr.html; sourceTree = "<group>"; };
+		DCED9BB12547F23900ACB166 /* tahorat_olish.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = tahorat_olish.html; sourceTree = "<group>"; };
+		DCED9BB22547F23900ACB166 /* peshin_namozi.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = peshin_namozi.html; sourceTree = "<group>"; };
 		DCED9BB32547F23900ACB166 /* img_3_men.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = img_3_men.pdf; sourceTree = "<group>"; };
-		DCED9BB42547F23900ACB166 /* isha.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = isha.html; sourceTree = "<group>"; };
+		DCED9BB42547F23900ACB166 /* xufton_namozi.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = xufton_namozi.html; sourceTree = "<group>"; };
 		DCED9BB52547F23900ACB166 /* img_6_men.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = img_6_men.pdf; sourceTree = "<group>"; };
 		DCED9BB62547F23900ACB166 /* img_2_women.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = img_2_women.pdf; sourceTree = "<group>"; };
 		DCED9BB72547F23900ACB166 /* img_4_women.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = img_4_women.pdf; sourceTree = "<group>"; };
@@ -138,6 +144,67 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		8C1224C52548315D002FFFF7 /* Bomdod namozi images */ = {
+			isa = PBXGroup;
+			children = (
+				DCED9BA72547F23900ACB166 /* img_0_men.pdf */,
+				DCED9BA02547F23900ACB166 /* img_0_women.pdf */,
+				DCED9BA32547F23900ACB166 /* img_1_men.pdf */,
+				DCED9BAD2547F23900ACB166 /* img_1_women.pdf */,
+				DCED9BB02547F23900ACB166 /* img_2_men.pdf */,
+				DCED9BB62547F23900ACB166 /* img_2_women.pdf */,
+				DCED9BB32547F23900ACB166 /* img_3_men.pdf */,
+				DCED9BB92547F23900ACB166 /* img_3_women.pdf */,
+				DCED9BBC2547F23900ACB166 /* img_4_men.pdf */,
+				DCED9BB72547F23900ACB166 /* img_4_women.pdf */,
+				DCED9BBA2547F23900ACB166 /* img_5_men.pdf */,
+				DCED9BBD2547F23900ACB166 /* img_5_women.pdf */,
+				DCED9BB52547F23900ACB166 /* img_6_men.pdf */,
+				DCED9BA82547F23900ACB166 /* img_6_women.pdf */,
+			);
+			path = "Bomdod namozi images";
+			sourceTree = "<group>";
+		};
+		8C1224C625483180002FFFF7 /* HTML */ = {
+			isa = PBXGroup;
+			children = (
+				DCED9BAF2547F23900ACB166 /* asr_namozi.html */,
+				DCED9BB82547F23900ACB166 /* azon.html */,
+				DCED9BB22547F23900ACB166 /* peshin_namozi.html */,
+				DCED9BAA2547F23900ACB166 /* bomdod_namozi.html */,
+				DCED9BB42547F23900ACB166 /* xufton_namozi.html */,
+				DCED9BAE2547F23900ACB166 /* shom_namozi.html */,
+				DCED9BB12547F23900ACB166 /* tahorat_olish.html */,
+			);
+			path = HTML;
+			sourceTree = "<group>";
+		};
+		8C1224C7254831AB002FFFF7 /* Tahorat olish images */ = {
+			isa = PBXGroup;
+			children = (
+				DCED9BA22547F23900ACB166 /* tahorat_0.pdf */,
+				DCED9BA52547F23900ACB166 /* tahorat_1.pdf */,
+				DCED9BA12547F23900ACB166 /* tahorat_2.pdf */,
+				DCED9B9F2547F23900ACB166 /* tahorat_3.pdf */,
+				DCED9BA92547F23900ACB166 /* tahorat_4.pdf */,
+				DCED9BA62547F23900ACB166 /* tahorat_5.pdf */,
+				DCED9BAB2547F23900ACB166 /* tahorat_6.pdf */,
+				DCED9BAC2547F23900ACB166 /* tahorat_7.pdf */,
+				DCED9BBB2547F23900ACB166 /* tahorat_8.pdf */,
+			);
+			path = "Tahorat olish images";
+			sourceTree = "<group>";
+		};
+		8C1224C8254831BF002FFFF7 /* Namoz o'qishni o'rganamiz */ = {
+			isa = PBXGroup;
+			children = (
+				8C1224C52548315D002FFFF7 /* Bomdod namozi images */,
+				8C1224C625483180002FFFF7 /* HTML */,
+				8C1224C7254831AB002FFFF7 /* Tahorat olish images */,
+			);
+			path = "Namoz o'qishni o'rganamiz";
+			sourceTree = "<group>";
+		};
 		C7747B42538923C55B5D7B1A /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -169,11 +236,13 @@
 			isa = PBXGroup;
 			children = (
 				DCED9BE02547F24600ACB166 /* AppDelegate.swift */,
-				DCED9BBE2547F23900ACB166 /* Assets.xcassets */,
-				DCED9B9E2547F23900ACB166 /* Supporting files */,
-				DCED9B862547F22500ACB166 /* Controller */,
+				DCED9B812547F21800ACB166 /* Extensions.swift */,
 				DCED9B802547F21800ACB166 /* Model */,
 				DCED9BE62547F52000ACB166 /* View */,
+				DCED9B862547F22500ACB166 /* Controller */,
+				DCED9B9E2547F23900ACB166 /* Supporting files */,
+				DCED9BA42547F23900ACB166 /* Muslim.db */,
+				DCED9BBE2547F23900ACB166 /* Assets.xcassets */,
 				DCED9B732547F1CE00ACB166 /* Info.plist */,
 			);
 			path = Islamic;
@@ -182,7 +251,6 @@
 		DCED9B802547F21800ACB166 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				DCED9B812547F21800ACB166 /* Extensions.swift */,
 				DCED9B822547F21800ACB166 /* Database.swift */,
 			);
 			path = Model;
@@ -191,16 +259,18 @@
 		DCED9B862547F22500ACB166 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				DCED9B872547F22500ACB166 /* DuolarController.swift */,
-				DCED9B882547F22500ACB166 /* Asmaul_Husna_Cell.swift */,
-				DCED9B892547F22500ACB166 /* Al-Jome_As-SahihController.swift */,
-				DCED9B8A2547F22500ACB166 /* Zikrlar_Controller.swift */,
-				DCED9B8B2547F22500ACB166 /* HomePageController.swift */,
+				DCED9B8B2547F22500ACB166 /* BoshSahifaController.swift */,
+				DCED9B902547F22500ACB166 /* NamozVaqtlariController.swift */,
 				DCED9B8C2547F22500ACB166 /* NamozOqishniOrganamizController.swift */,
 				DCED9B8D2547F22500ACB166 /* WebViewController.swift */,
 				DCED9B8E2547F22500ACB166 /* CalendarViewController.swift */,
+				DCED9B872547F22500ACB166 /* DuolarController.swift */,
+				8C1224CA25483783002FFFF7 /* TableInDuolarController.swift */,
+				DCED9B8A2547F22500ACB166 /* ZikrlarController.swift */,
+				8C7ADB80254801A100920E4D /* TongiVaTungiZikrlarController.swift */,
+				DCED9B882547F22500ACB166 /* Asmaul_Husna_Cell.swift */,
+				DCED9B892547F22500ACB166 /* Al-Jome_As-SahihController.swift */,
 				DCED9B8F2547F22500ACB166 /* Al-Jome_As-Sahih_Cell.swift */,
-				DCED9B902547F22500ACB166 /* NamozVaqtlariController.swift */,
 				DCED9B912547F22500ACB166 /* Asmaul_Husna_Controller.swift */,
 			);
 			path = Controller;
@@ -209,37 +279,7 @@
 		DCED9B9E2547F23900ACB166 /* Supporting files */ = {
 			isa = PBXGroup;
 			children = (
-				DCED9B9F2547F23900ACB166 /* tahorat_3.pdf */,
-				DCED9BA02547F23900ACB166 /* img_0_women.pdf */,
-				DCED9BA12547F23900ACB166 /* tahorat_2.pdf */,
-				DCED9BA22547F23900ACB166 /* tahorat_0.pdf */,
-				DCED9BA32547F23900ACB166 /* img_1_men.pdf */,
-				DCED9BA42547F23900ACB166 /* Muslim.db */,
-				DCED9BA52547F23900ACB166 /* tahorat_1.pdf */,
-				DCED9BA62547F23900ACB166 /* tahorat_5.pdf */,
-				DCED9BA72547F23900ACB166 /* img_0_men.pdf */,
-				DCED9BA82547F23900ACB166 /* img_6_women.pdf */,
-				DCED9BA92547F23900ACB166 /* tahorat_4.pdf */,
-				DCED9BAA2547F23900ACB166 /* fajr.html */,
-				DCED9BAB2547F23900ACB166 /* tahorat_6.pdf */,
-				DCED9BAC2547F23900ACB166 /* tahorat_7.pdf */,
-				DCED9BAD2547F23900ACB166 /* img_1_women.pdf */,
-				DCED9BAE2547F23900ACB166 /* maghrib.html */,
-				DCED9BAF2547F23900ACB166 /* asr.html */,
-				DCED9BB02547F23900ACB166 /* img_2_men.pdf */,
-				DCED9BB12547F23900ACB166 /* tahorat.html */,
-				DCED9BB22547F23900ACB166 /* dzuhr.html */,
-				DCED9BB32547F23900ACB166 /* img_3_men.pdf */,
-				DCED9BB42547F23900ACB166 /* isha.html */,
-				DCED9BB52547F23900ACB166 /* img_6_men.pdf */,
-				DCED9BB62547F23900ACB166 /* img_2_women.pdf */,
-				DCED9BB72547F23900ACB166 /* img_4_women.pdf */,
-				DCED9BB82547F23900ACB166 /* azon.html */,
-				DCED9BB92547F23900ACB166 /* img_3_women.pdf */,
-				DCED9BBA2547F23900ACB166 /* img_5_men.pdf */,
-				DCED9BBB2547F23900ACB166 /* tahorat_8.pdf */,
-				DCED9BBC2547F23900ACB166 /* img_4_men.pdf */,
-				DCED9BBD2547F23900ACB166 /* img_5_women.pdf */,
+				8C1224C8254831BF002FFFF7 /* Namoz o'qishni o'rganamiz */,
 			);
 			path = "Supporting files";
 			sourceTree = "<group>";
@@ -247,9 +287,10 @@
 		DCED9BE62547F52000ACB166 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				8C1224CD25483A52002FFFF7 /* CustomCells.swift */,
 				DCED9BE72547F53600ACB166 /* Zikrlar Cell */,
-				DCED9B702547F1CE00ACB166 /* LaunchScreen.storyboard */,
 				DCED9B7D2547F20900ACB166 /* Main.storyboard */,
+				DCED9B702547F1CE00ACB166 /* LaunchScreen.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -332,11 +373,11 @@
 				DCED9BC32547F23A00ACB166 /* img_1_men.pdf in Resources */,
 				DCED9BEA2547F53600ACB166 /* ZikrlarCell.xib in Resources */,
 				DCED9BC92547F23A00ACB166 /* tahorat_4.pdf in Resources */,
-				DCED9BD22547F23A00ACB166 /* dzuhr.html in Resources */,
+				DCED9BD22547F23A00ACB166 /* peshin_namozi.html in Resources */,
 				DCED9BC12547F23A00ACB166 /* tahorat_2.pdf in Resources */,
 				DCED9BC52547F23A00ACB166 /* tahorat_1.pdf in Resources */,
 				DCED9BC72547F23A00ACB166 /* img_0_men.pdf in Resources */,
-				DCED9BCE2547F23A00ACB166 /* maghrib.html in Resources */,
+				DCED9BCE2547F23A00ACB166 /* shom_namozi.html in Resources */,
 				DCED9BDB2547F23A00ACB166 /* tahorat_8.pdf in Resources */,
 				DCED9BD62547F23A00ACB166 /* img_2_women.pdf in Resources */,
 				DCED9BBF2547F23A00ACB166 /* tahorat_3.pdf in Resources */,
@@ -345,18 +386,18 @@
 				DCED9BD82547F23A00ACB166 /* azon.html in Resources */,
 				DCED9BCD2547F23A00ACB166 /* img_1_women.pdf in Resources */,
 				DCED9BD72547F23A00ACB166 /* img_4_women.pdf in Resources */,
-				DCED9BD12547F23A00ACB166 /* tahorat.html in Resources */,
-				DCED9BD42547F23A00ACB166 /* isha.html in Resources */,
+				DCED9BD12547F23A00ACB166 /* tahorat_olish.html in Resources */,
+				DCED9BD42547F23A00ACB166 /* xufton_namozi.html in Resources */,
 				DCED9BD92547F23A00ACB166 /* img_3_women.pdf in Resources */,
 				DCED9B722547F1CE00ACB166 /* LaunchScreen.storyboard in Resources */,
 				DCED9BD52547F23A00ACB166 /* img_6_men.pdf in Resources */,
 				DCED9B7E2547F20900ACB166 /* Main.storyboard in Resources */,
 				DCED9BDA2547F23A00ACB166 /* img_5_men.pdf in Resources */,
-				DCED9BCF2547F23A00ACB166 /* asr.html in Resources */,
+				DCED9BCF2547F23A00ACB166 /* asr_namozi.html in Resources */,
 				DCED9BCC2547F23A00ACB166 /* tahorat_7.pdf in Resources */,
 				DCED9BD02547F23A00ACB166 /* img_2_men.pdf in Resources */,
 				DCED9BDD2547F23A00ACB166 /* img_5_women.pdf in Resources */,
-				DCED9BCA2547F23A00ACB166 /* fajr.html in Resources */,
+				DCED9BCA2547F23A00ACB166 /* bomdod_namozi.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,13 +450,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C7ADB81254801A100920E4D /* TongiVaTungiZikrlarController.swift in Sources */,
 				DCED9B992547F22500ACB166 /* CalendarViewController.swift in Sources */,
 				DCED9B9C2547F22500ACB166 /* Asmaul_Husna_Controller.swift in Sources */,
 				DCED9B922547F22500ACB166 /* DuolarController.swift in Sources */,
 				DCED9B9A2547F22500ACB166 /* Al-Jome_As-Sahih_Cell.swift in Sources */,
 				DCED9BE12547F24600ACB166 /* AppDelegate.swift in Sources */,
+				8C1224CB25483783002FFFF7 /* TableInDuolarController.swift in Sources */,
 				DCED9B982547F22500ACB166 /* WebViewController.swift in Sources */,
-				DCED9B962547F22500ACB166 /* HomePageController.swift in Sources */,
+				DCED9B962547F22500ACB166 /* BoshSahifaController.swift in Sources */,
 				DCED9B9B2547F22500ACB166 /* NamozVaqtlariController.swift in Sources */,
 				DCED9B842547F21800ACB166 /* Database.swift in Sources */,
 				DCED9B932547F22500ACB166 /* Asmaul_Husna_Cell.swift in Sources */,
@@ -423,7 +466,8 @@
 				DCED9B972547F22500ACB166 /* NamozOqishniOrganamizController.swift in Sources */,
 				DCED9B942547F22500ACB166 /* Al-Jome_As-SahihController.swift in Sources */,
 				DCED9B832547F21800ACB166 /* Extensions.swift in Sources */,
-				DCED9B952547F22500ACB166 /* Zikrlar_Controller.swift in Sources */,
+				8C1224CE25483A52002FFFF7 /* CustomCells.swift in Sources */,
+				DCED9B952547F22500ACB166 /* ZikrlarController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

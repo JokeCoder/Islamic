@@ -1,10 +1,3 @@
-//
-//  CalendarViewController.swift
-//  Muslim UZ
-//
-//  Created by coder on 15/10/20.
-//
-
 import UIKit
 import Adhan
 
@@ -127,7 +120,7 @@ extension CalendarViewController: UICollectionViewDelegate, UICollectionViewData
         
         if indexPath.section == allFriday[indexPath.section] {
             cell.backgroundColor = .systemBlue
-        } else if indexPath.section == components.day!-1 {
+        } else if indexPath.section == components.day! - 1 {
             cell.backgroundColor = .red
         } else {
             cell.backgroundColor = .white
@@ -145,54 +138,3 @@ extension CalendarViewController: UICollectionViewDelegate, UICollectionViewData
     }
     
 }
-
-
-
-class CalendarCustomCell: UICollectionViewCell {
-    @IBOutlet weak var numLabel: UILabel!
-}
-
-extension Date {
-    
-    var month: String {
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "MMM"
-        return dateFormatter.string(from: self)
-    }
-    
-    var startOfDay: Date {
-        return Calendar.current.startOfDay(for: self)
-    }
-
-    var startOfMonth: Date {
-
-        let calendar = Calendar(identifier: .gregorian)
-        let components = calendar.dateComponents([.year, .month], from: self)
-
-        return  calendar.date(from: components)!
-    }
-
-    var endOfDay: Date {
-        var components = DateComponents()
-        components.day = 1
-        components.second = -1
-        return Calendar.current.date(byAdding: components, to: startOfDay)!
-    }
-
-    var endOfMonth: Date {
-        var components = DateComponents()
-        components.month = 1
-        components.second = -1
-        return Calendar(identifier: .gregorian).date(byAdding: components, to: startOfMonth)!
-    }
-
-    func isFriday() -> Bool {
-        let calendar = Calendar(identifier: .gregorian)
-        let components = calendar.dateComponents([.weekday], from: self)
-        return components.weekday == 6
-    }
-}
-
-
-
-//gbygybgybgybbgybgygbygbybgybgybgy

@@ -1,11 +1,3 @@
-//
-//  Al-Jome_As-SahihController.swift
-//  Muslim UZ
-//
-//  Created by Asliddin Rasulov on 9/10/20.
-//  Copyright © 2020 Asliddin Rasulov. All rights reserved.
-//
-
 import UIKit
 import SQLite3
 
@@ -19,7 +11,7 @@ class Al_Jome_As_Sahih_Controller: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        chapters = fetch(name: "chapters", n: 1)
+//        chapters = fetch(name: "chapters", n: 1)
         tableView.rowHeight = UITableView.automaticDimension
         tableView.estimatedRowHeight = 300
         

@@ -1,17 +1,11 @@
-//
-//  BlessingController.swift
-//  Muslim UZ
-//
-//  Created by Asliddin Rasulov on 9/9/20.
-//  Copyright © 2020 Asliddin Rasulov. All rights reserved.
-//
-
 import UIKit
 
 class DuolarController: UIViewController, UISearchBarDelegate {
 
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var searchBar: UISearchBar!
+    
+    var duoLabels = ["duo0", "duo1", "duo2", "duo3", "duo4", "duo5", "duo6", "duo7", "duo8", "duo9", "duo10"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,22 +31,22 @@ class DuolarController: UIViewController, UISearchBarDelegate {
 
 extension DuolarController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 11
+        return duoLabels.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath)
-        
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! CustomCollectionCell
+        cell.iconTitle.text = duoLabels[indexPath.row]
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: 0.3 * view.frame.width - 10, height: 0.3 * view.frame.width - 10)
+        return CGSize(width: 0.3 * view.frame.width - 10, height: 0.33 * view.frame.width)
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-//        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-//        let vc = storyboard.instantiateViewController(withIdentifier: "\(indexPath.row)")
-//        navigationController?.show(vc, sender: nil)
+        let vc = storyboard?.instantiateViewController(withIdentifier: "tableInDuo") as! TableInDuolarController
+        vc.rowName = duoLabels[indexPath.row]
+        navigationController?.show(vc, sender: nil)
     }
 }

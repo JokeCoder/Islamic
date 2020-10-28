@@ -1,22 +1,22 @@
-//
-//  NamozOqishniOrganamizController.swift
-//  Muslim UZ
-//
-//  Created by Asliddin Rasulov on 14/10/20.
-//
-
 import UIKit
 
 class NamozOqishniOrganamizController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
-    let names = ["Таҳорат олиш тартиби", "Азон", "Бомдод намози", "Пешин намози", "Аср намози", "Шом намози", "Хуфтон намози"]
+    let names = ["tahorat_olish", "azon", "bomdod_namozi", "peshin_namozi", "asr_namozi", "shom_namozi", "xufton_namozi"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         tableView.rowHeight = view.frame.height / 10
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "learnPrayer" {
+            let vc = segue.destination as! WebViewController
+            vc.rowName = names[tableView.indexPathForSelectedRow!.row]
+        }
     }
     
     @IBAction func back(_ sender: Any) {
