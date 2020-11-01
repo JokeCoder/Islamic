@@ -11,6 +11,7 @@
 		8C1224CB25483783002FFFF7 /* TableInDuolarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1224CA25483783002FFFF7 /* TableInDuolarController.swift */; };
 		8C1224CE25483A52002FFFF7 /* CustomCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1224CD25483A52002FFFF7 /* CustomCells.swift */; };
 		8C7ADB81254801A100920E4D /* TongiVaTungiZikrlarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7ADB80254801A100920E4D /* TongiVaTungiZikrlarController.swift */; };
+		DCA40A59254AEC80006D0EEA /* IslomController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA40A58254AEC80006D0EEA /* IslomController.swift */; };
 		DCED9B722547F1CE00ACB166 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCED9B702547F1CE00ACB166 /* LaunchScreen.storyboard */; };
 		DCED9B7E2547F20900ACB166 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCED9B7D2547F20900ACB166 /* Main.storyboard */; };
 		DCED9B832547F21800ACB166 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCED9B812547F21800ACB166 /* Extensions.swift */; };
@@ -70,6 +71,7 @@
 		8C7ADB80254801A100920E4D /* TongiVaTungiZikrlarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TongiVaTungiZikrlarController.swift; sourceTree = "<group>"; };
 		A8F72359520AFD6D18304DA0 /* Pods-Islamic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Islamic.release.xcconfig"; path = "Target Support Files/Pods-Islamic/Pods-Islamic.release.xcconfig"; sourceTree = "<group>"; };
 		AD128E1232E09167BD0ADDA4 /* Pods_Islamic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Islamic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCA40A58254AEC80006D0EEA /* IslomController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IslomController.swift; sourceTree = "<group>"; };
 		DCED9B622547F1CD00ACB166 /* Islamic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Islamic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCED9B712547F1CE00ACB166 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DCED9B732547F1CE00ACB166 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -272,6 +274,7 @@
 				DCED9B892547F22500ACB166 /* Al-Jome_As-SahihController.swift */,
 				DCED9B8F2547F22500ACB166 /* Al-Jome_As-Sahih_Cell.swift */,
 				DCED9B912547F22500ACB166 /* Asmaul_Husna_Controller.swift */,
+				DCA40A58254AEC80006D0EEA /* IslomController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -458,6 +461,7 @@
 				DCED9BE12547F24600ACB166 /* AppDelegate.swift in Sources */,
 				8C1224CB25483783002FFFF7 /* TableInDuolarController.swift in Sources */,
 				DCED9B982547F22500ACB166 /* WebViewController.swift in Sources */,
+				DCA40A59254AEC80006D0EEA /* IslomController.swift in Sources */,
 				DCED9B962547F22500ACB166 /* BoshSahifaController.swift in Sources */,
 				DCED9B9B2547F22500ACB166 /* NamozVaqtlariController.swift in Sources */,
 				DCED9B842547F21800ACB166 /* Database.swift in Sources */,
