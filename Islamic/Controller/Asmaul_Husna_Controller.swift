@@ -16,9 +16,11 @@ class Asmaul_Husna_Controller: UIViewController {
     }
     
     @IBAction func back(_ sender: Any) {
-        dismiss(animated: true, completion: nil)
+        navigationController?.popViewController(animated: true)
     }
 }
+
+
 extension Asmaul_Husna_Controller: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return names.count

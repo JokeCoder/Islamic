@@ -53,7 +53,3 @@ class CalendarCustomCell: UICollectionViewCell {
 }
 
 
-class IslomCustomCell: UICollectionViewCell {
-    @IBOutlet weak var cellLabel: UILabel!
-    @IBOutlet weak var cellImage: UIImageView!
-}

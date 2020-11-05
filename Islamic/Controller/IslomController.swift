@@ -9,9 +9,16 @@ import UIKit
 
 class IslomController: UIViewController {
     
-    let namesArray = ["1", "22", "333", "4444", "55555", "666666"]
-    @IBOutlet weak var collectionView: UICollectionView!
+    let namesArray = ["iyman", "namaz", "zakat", "haj", "ruza", "women"]
     
+    var database = Database()
+    
+    var rowName: String = ""
+    var namesInIslomVCArray: [[String]] = []
+    var rowArray: [String] = []
+    
+    
+    @IBOutlet weak var collectionView: UICollectionView!
     @IBAction func back(_ sender: Any) {
         navigationController?.popViewController(animated: true)
     }
@@ -26,16 +33,14 @@ class IslomController: UIViewController {
 
 extension IslomController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        6
+        namesArray.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "islomCell", for: indexPath) as! IslomCustomCell
-        
-        cell.backgroundColor = .blue
-        
-        cell.cellImage.image = UIImage(named: "IslomVCImages\(indexPath.row)")
-        cell.cellLabel.text = namesArray[indexPath.row]
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "islomCell", for: indexPath) as! CustomCollectionCell
+                
+        cell.iconImage.image = UIImage(named: "time_\(indexPath.row)")
+        cell.iconTitle.text = namesArray[indexPath.row]
         
         return cell
     }
@@ -50,6 +55,7 @@ extension IslomController: UICollectionViewDelegate, UICollectionViewDataSource,
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let vc = storyboard?.instantiateViewController(withIdentifier: "tableInIslomViewController") as! TableInIslomViewController
+        vc.title = namesArray[indexPath.row]
         navigationController?.show(vc, sender: nil)
     }
 }

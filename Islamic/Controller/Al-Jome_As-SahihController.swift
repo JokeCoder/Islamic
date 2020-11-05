@@ -18,7 +18,7 @@ class Al_Jome_As_Sahih_Controller: UIViewController {
     }
     
     @IBAction func back(_ sender: Any) {
-        dismiss(animated: true, completion: nil)
+        navigationController?.popViewController(animated: true)
     }
 }
 extension Al_Jome_As_Sahih_Controller: UITableViewDelegate, UITableViewDataSource {

@@ -1803,7 +1803,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="islomCell" id="vez-wR-4Cq" customClass="IslomCustomCell" customModule="Islamic" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="islomCell" id="vez-wR-4Cq" customClass="CustomCollectionCell" customModule="Islamic" customModuleProvider="target">
                                         <rect key="frame" x="77.333333333333329" y="0.0" width="218" height="218"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="2yi-tS-FB8">
@@ -1819,35 +1819,22 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a9t-d9-zeU">
-                                                    <rect key="frame" x="27.333333333333329" y="0.0" width="163.33333333333337" height="163.66666666666666"/>
-                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                                    <userDefinedRuntimeAttributes>
-                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                            <integer key="value" value="10"/>
-                                                        </userDefinedRuntimeAttribute>
-                                                    </userDefinedRuntimeAttributes>
-                                                </view>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
                                                 <constraint firstAttribute="trailing" secondItem="k22-qb-nRf" secondAttribute="trailing" id="9M9-fp-d82"/>
                                                 <constraint firstItem="9Cv-uv-xk0" firstAttribute="centerX" secondItem="k22-qb-nRf" secondAttribute="centerX" id="A9G-nl-l9y"/>
                                                 <constraint firstItem="9Cv-uv-xk0" firstAttribute="bottom" secondItem="k22-qb-nRf" secondAttribute="bottom" constant="-8" id="Bax-Xs-Qpc"/>
-                                                <constraint firstItem="a9t-d9-zeU" firstAttribute="centerX" secondItem="2yi-tS-FB8" secondAttribute="centerX" id="OX7-1p-VUi"/>
                                                 <constraint firstItem="k22-qb-nRf" firstAttribute="top" secondItem="2yi-tS-FB8" secondAttribute="top" id="R7R-ya-Gwh"/>
                                                 <constraint firstItem="9Cv-uv-xk0" firstAttribute="width" secondItem="k22-qb-nRf" secondAttribute="width" id="RXo-EZ-sHV"/>
                                                 <constraint firstAttribute="bottom" secondItem="k22-qb-nRf" secondAttribute="bottom" id="ppL-0A-nhQ"/>
-                                                <constraint firstItem="a9t-d9-zeU" firstAttribute="height" secondItem="2yi-tS-FB8" secondAttribute="width" multiplier="0.75" id="siu-44-cyb"/>
                                                 <constraint firstItem="k22-qb-nRf" firstAttribute="leading" secondItem="2yi-tS-FB8" secondAttribute="leading" id="tPd-jE-sSw"/>
-                                                <constraint firstItem="a9t-d9-zeU" firstAttribute="width" secondItem="2yi-tS-FB8" secondAttribute="width" multiplier="0.75" id="x1w-gs-QGB"/>
-                                                <constraint firstItem="a9t-d9-zeU" firstAttribute="top" secondItem="2yi-tS-FB8" secondAttribute="top" id="yCc-Im-e0e"/>
                                             </constraints>
                                         </collectionViewCellContentView>
                                         <size key="customSize" width="218" height="218"/>
                                         <connections>
-                                            <outlet property="cellImage" destination="k22-qb-nRf" id="e2y-eq-VJt"/>
-                                            <outlet property="cellLabel" destination="9Cv-uv-xk0" id="Ml4-8d-QOh"/>
+                                            <outlet property="iconImage" destination="k22-qb-nRf" id="HDT-Ss-ICs"/>
+                                            <outlet property="iconTitle" destination="9Cv-uv-xk0" id="mCf-Sj-SIq"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -1876,7 +1863,58 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a1Y-fP-Cy1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4638" y="517"/>
+            <point key="canvasLocation" x="4658" y="517"/>
+        </scene>
+        <!--Details Page View Controller In Islom-->
+        <scene sceneID="sVu-oK-QHw">
+            <objects>
+                <viewController modalTransitionStyle="crossDissolve" modalPresentationStyle="fullScreen" id="VNY-ml-JHL" customClass="DetailsPageViewControllerInIslom" customModule="Islamic" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="T19-Qr-5lo">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="inU-mX-eVZ" userLabel="BarView">
+                                <rect key="frame" x="20.666666666666657" y="54" width="372.66666666666674" height="62.666666666666657"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tgn-LB-nLk" userLabel="Cancel">
+                                        <rect key="frame" x="0.0" y="9.3333333333333357" width="37.333333333333336" height="44"/>
+                                        <state key="normal" image="cancel.black"/>
+                                        <connections>
+                                            <action selector="back:" destination="VNY-ml-JHL" eventType="touchUpInside" id="cij-SL-hFz"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Islom" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qdL-EN-NBc" userLabel="Дуолар">
+                                        <rect key="frame" x="74.666666666666657" y="18" width="56.666666666666657" height="27"/>
+                                        <fontDescription key="fontDescription" name="Charter-Bold" family="Charter" pointSize="22"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="tgn-LB-nLk" firstAttribute="centerY" secondItem="inU-mX-eVZ" secondAttribute="centerY" id="057-zk-cNL"/>
+                                    <constraint firstItem="tgn-LB-nLk" firstAttribute="leading" secondItem="inU-mX-eVZ" secondAttribute="leading" id="9aD-ES-P5f"/>
+                                    <constraint firstItem="qdL-EN-NBc" firstAttribute="leading" secondItem="tgn-LB-nLk" secondAttribute="trailing" multiplier="2" id="Api-rW-95J"/>
+                                    <constraint firstItem="tgn-LB-nLk" firstAttribute="height" secondItem="inU-mX-eVZ" secondAttribute="height" multiplier="0.7" id="BXL-Dl-VWK"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="qdL-EN-NBc" secondAttribute="trailing" constant="20" symbolic="YES" id="Lom-bZ-SS5"/>
+                                    <constraint firstItem="qdL-EN-NBc" firstAttribute="centerY" secondItem="inU-mX-eVZ" secondAttribute="centerY" id="MRt-gu-r87"/>
+                                    <constraint firstItem="tgn-LB-nLk" firstAttribute="width" secondItem="inU-mX-eVZ" secondAttribute="width" multiplier="0.1" id="o0R-pq-9WM"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="YyZ-JE-zPN"/>
+                        <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="inU-mX-eVZ" firstAttribute="top" secondItem="YyZ-JE-zPN" secondAttribute="top" constant="10" id="3vt-to-ywZ"/>
+                            <constraint firstItem="inU-mX-eVZ" firstAttribute="width" secondItem="T19-Qr-5lo" secondAttribute="width" multiplier="0.9" id="Qik-sR-fEb"/>
+                            <constraint firstItem="inU-mX-eVZ" firstAttribute="centerX" secondItem="YyZ-JE-zPN" secondAttribute="centerX" id="jGr-Go-u5f"/>
+                            <constraint firstItem="inU-mX-eVZ" firstAttribute="height" secondItem="T19-Qr-5lo" secondAttribute="height" multiplier="0.07" id="uU9-wz-JUI"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zk1-lF-TmT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4658" y="1296"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
