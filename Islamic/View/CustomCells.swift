@@ -47,6 +47,13 @@ class CustomCollectionCell: UICollectionViewCell {
     }
 }
 
+
 class CalendarCustomCell: UICollectionViewCell {
     @IBOutlet weak var numLabel: UILabel!
+}
+
+
+class IslomCustomCell: UICollectionViewCell {
+    @IBOutlet weak var cellLabel: UILabel!
+    @IBOutlet weak var cellImage: UIImageView!
 }
