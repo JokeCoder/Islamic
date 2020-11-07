@@ -1,29 +1,41 @@
+////
+////  DetailsPageViewControllerInIslom.swift
+////  Islamic
+////
+////  Created by coder on 05/11/20.
+////
 //
-//  DetailsPageViewControllerInIslom.swift
-//  Islamic
+//import UIKit
 //
-//  Created by coder on 05/11/20.
+//class DetailsPageViewControllerInIslom: UIViewController  {
+//    
+//    var dbsd = Database()
+//    
+//    
+//    @IBAction func back(_ sender: Any) {
+//        navigationController?.popViewController(animated: true)
+//    }
+//    
+//    
+//    override func viewDidLoad() {
+//        super.viewDidLoad()
+//        
 //
-
-import UIKit
-
-class DetailsPageViewControllerInIslom: UIPageViewController {
-
-    weak var swipeDelegate: PageViewControllerDelegate?
-    
-    @IBAction func back(_ sender: Any) {
-        navigationController?.popViewController(animated: true)
-    }
-    
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-    
-}
-
-protocol PageViewControllerDelegate: class {
-    func pageDidSwipe(to index: Int)
-}
+//    }
+//    
+//    
+//    override func viewDidAppear(_ animated: Bool) {
+//        super.viewDidAppear(animated)
+//        
+//        DispatchQueue.main.asyncAfter(deadline: .now()+0.1, execute: {
+//            self.presentPageVC()
+//        })
+//    }
+//    
+//    
+//    
+//    
+//    
+//    
+//}
+//

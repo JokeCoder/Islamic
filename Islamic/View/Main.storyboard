@@ -1656,21 +1656,20 @@
                                             <action selector="back:" destination="3fg-Zt-a9u" eventType="touchUpInside" id="yWe-Zf-h82"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QlS-M8-lea" userLabel="Дуолар">
-                                        <rect key="frame" x="74.666666666666657" y="31.333333333333329" width="0.0" height="0.0"/>
-                                        <fontDescription key="fontDescription" name="Charter-Bold" family="Charter" pointSize="22"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N2S-b3-WnL">
+                                        <rect key="frame" x="158.33333333333334" y="18.333333333333329" width="56" height="26.333333333333329"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstItem="QlS-M8-lea" firstAttribute="centerY" secondItem="9Hq-ev-fG2" secondAttribute="centerY" id="0hV-2A-9j1"/>
-                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="QlS-M8-lea" secondAttribute="trailing" constant="20" symbolic="YES" id="0oe-3T-Y5v"/>
                                     <constraint firstItem="GYg-0n-Ckh" firstAttribute="width" secondItem="9Hq-ev-fG2" secondAttribute="width" multiplier="0.1" id="1Vw-lb-n6d"/>
-                                    <constraint firstItem="QlS-M8-lea" firstAttribute="leading" secondItem="GYg-0n-Ckh" secondAttribute="trailing" multiplier="2" id="5MK-08-WZ4"/>
                                     <constraint firstItem="GYg-0n-Ckh" firstAttribute="leading" secondItem="9Hq-ev-fG2" secondAttribute="leading" id="BjS-4p-tea"/>
                                     <constraint firstItem="GYg-0n-Ckh" firstAttribute="centerY" secondItem="9Hq-ev-fG2" secondAttribute="centerY" id="PdB-mH-pgB"/>
+                                    <constraint firstItem="N2S-b3-WnL" firstAttribute="centerX" secondItem="9Hq-ev-fG2" secondAttribute="centerX" id="Q1l-7q-UHl"/>
+                                    <constraint firstItem="N2S-b3-WnL" firstAttribute="centerY" secondItem="9Hq-ev-fG2" secondAttribute="centerY" id="QII-AP-OfP"/>
                                     <constraint firstItem="GYg-0n-Ckh" firstAttribute="height" secondItem="9Hq-ev-fG2" secondAttribute="height" multiplier="0.7" id="kEB-tt-4jh"/>
                                 </constraints>
                             </view>
@@ -1750,6 +1749,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="lbO-Xr-m57"/>
                     <connections>
+                        <outlet property="navTitle" destination="N2S-b3-WnL" id="deq-OU-1VP"/>
                         <outlet property="tableView" destination="Ezo-AE-6fX" id="RSP-mS-bWb"/>
                     </connections>
                 </viewController>
@@ -1775,9 +1775,9 @@
                                             <action selector="back:" destination="FPm-LW-e2r" eventType="touchUpInside" id="s7U-UC-dyi"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Islom" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R7Z-zt-vGH" userLabel="Дуолар">
-                                        <rect key="frame" x="74.666666666666657" y="18" width="56.666666666666657" height="27"/>
-                                        <fontDescription key="fontDescription" name="Charter-Bold" family="Charter" pointSize="22"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Islom" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lff-Z7-1uK">
+                                        <rect key="frame" x="158.66666666666669" y="18.333333333333329" width="55.666666666666657" height="26.333333333333329"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -1785,12 +1785,11 @@
                                 <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="cjE-l5-6pn" firstAttribute="height" secondItem="jMM-Tv-3ML" secondAttribute="height" multiplier="0.7" id="2pk-5U-QwE"/>
+                                    <constraint firstItem="Lff-Z7-1uK" firstAttribute="centerX" secondItem="jMM-Tv-3ML" secondAttribute="centerX" id="5Ol-4B-bnu"/>
                                     <constraint firstItem="cjE-l5-6pn" firstAttribute="centerY" secondItem="jMM-Tv-3ML" secondAttribute="centerY" id="Ulc-Nd-uj6"/>
-                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="R7Z-zt-vGH" secondAttribute="trailing" constant="20" symbolic="YES" id="a0c-hk-5cn"/>
                                     <constraint firstItem="cjE-l5-6pn" firstAttribute="leading" secondItem="jMM-Tv-3ML" secondAttribute="leading" id="hjK-e0-J1m"/>
-                                    <constraint firstItem="R7Z-zt-vGH" firstAttribute="leading" secondItem="cjE-l5-6pn" secondAttribute="trailing" multiplier="2" id="ify-9A-iXv"/>
+                                    <constraint firstItem="Lff-Z7-1uK" firstAttribute="centerY" secondItem="jMM-Tv-3ML" secondAttribute="centerY" id="jzh-al-Ozz"/>
                                     <constraint firstItem="cjE-l5-6pn" firstAttribute="width" secondItem="jMM-Tv-3ML" secondAttribute="width" multiplier="0.1" id="ryA-nf-5x2"/>
-                                    <constraint firstItem="R7Z-zt-vGH" firstAttribute="centerY" secondItem="jMM-Tv-3ML" secondAttribute="centerY" id="tpy-kz-aNK"/>
                                 </constraints>
                             </view>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="2le-5F-me5">
@@ -1865,10 +1864,10 @@
             </objects>
             <point key="canvasLocation" x="4658" y="517"/>
         </scene>
-        <!--Details Page View Controller In Islom-->
+        <!--View Controller-->
         <scene sceneID="sVu-oK-QHw">
             <objects>
-                <viewController modalTransitionStyle="crossDissolve" modalPresentationStyle="fullScreen" id="VNY-ml-JHL" customClass="DetailsPageViewControllerInIslom" customModule="Islamic" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="textinpageVC" modalTransitionStyle="crossDissolve" modalPresentationStyle="fullScreen" id="VNY-ml-JHL" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="T19-Qr-5lo">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1883,8 +1882,8 @@
                                             <action selector="back:" destination="VNY-ml-JHL" eventType="touchUpInside" id="cij-SL-hFz"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Islom" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qdL-EN-NBc" userLabel="Дуолар">
-                                        <rect key="frame" x="74.666666666666657" y="18" width="56.666666666666657" height="27"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qdL-EN-NBc" userLabel="Дуолар">
+                                        <rect key="frame" x="74.666666666666657" y="31.333333333333329" width="0.0" height="0.0"/>
                                         <fontDescription key="fontDescription" name="Charter-Bold" family="Charter" pointSize="22"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -1901,16 +1900,32 @@
                                     <constraint firstItem="tgn-LB-nLk" firstAttribute="width" secondItem="inU-mX-eVZ" secondAttribute="width" multiplier="0.1" id="o0R-pq-9WM"/>
                                 </constraints>
                             </view>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cil-MY-naL">
+                                <rect key="frame" x="0.0" y="116.66666666666669" width="414" height="745.33333333333326"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="YyZ-JE-zPN"/>
                         <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="inU-mX-eVZ" firstAttribute="top" secondItem="YyZ-JE-zPN" secondAttribute="top" constant="10" id="3vt-to-ywZ"/>
+                            <constraint firstItem="YyZ-JE-zPN" firstAttribute="bottom" secondItem="Cil-MY-naL" secondAttribute="bottom" id="5vW-2n-ZHI"/>
+                            <constraint firstItem="Cil-MY-naL" firstAttribute="top" secondItem="inU-mX-eVZ" secondAttribute="bottom" id="J6t-Ag-0MZ"/>
+                            <constraint firstItem="Cil-MY-naL" firstAttribute="leading" secondItem="YyZ-JE-zPN" secondAttribute="leading" id="MI1-R8-FWt"/>
                             <constraint firstItem="inU-mX-eVZ" firstAttribute="width" secondItem="T19-Qr-5lo" secondAttribute="width" multiplier="0.9" id="Qik-sR-fEb"/>
+                            <constraint firstItem="YyZ-JE-zPN" firstAttribute="trailing" secondItem="Cil-MY-naL" secondAttribute="trailing" id="ZHT-Ut-143"/>
                             <constraint firstItem="inU-mX-eVZ" firstAttribute="centerX" secondItem="YyZ-JE-zPN" secondAttribute="centerX" id="jGr-Go-u5f"/>
+                            <constraint firstItem="Cil-MY-naL" firstAttribute="top" secondItem="inU-mX-eVZ" secondAttribute="bottom" id="ozP-h6-AGI"/>
                             <constraint firstItem="inU-mX-eVZ" firstAttribute="height" secondItem="T19-Qr-5lo" secondAttribute="height" multiplier="0.07" id="uU9-wz-JUI"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="navTitleOutlet" destination="Lom-bZ-SS5" id="7TO-Bz-cgj"/>
+                        <outlet property="textViewOutlet" destination="Cil-MY-naL" id="VMa-BJ-GaQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zk1-lF-TmT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1940,6 +1955,9 @@
         <image name="time_5" width="512" height="512"/>
         <image name="tongizikrlar" width="551" height="551"/>
         <image name="tungizikrlar" width="996" height="1010"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

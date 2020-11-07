@@ -11,13 +11,6 @@ class IslomController: UIViewController {
     
     let namesArray = ["iyman", "namaz", "zakat", "haj", "ruza", "women"]
     
-    var database = Database()
-    
-    var rowName: String = ""
-    var namesInIslomVCArray: [[String]] = []
-    var rowArray: [String] = []
-    
-    
     @IBOutlet weak var collectionView: UICollectionView!
     @IBAction func back(_ sender: Any) {
         navigationController?.popViewController(animated: true)
@@ -25,7 +18,6 @@ class IslomController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         
     }
 }
