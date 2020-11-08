@@ -11,19 +11,23 @@ class TableInDuolarController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var titleLabel: UILabel!
+    var myControllers = [TextInPageVC]()
+    
     
     var database = Database()
+    
     
     var rowName: String = ""
     var duoArray: [[String]] = []
     var rowArray: [String] = []
+    var contentArray: [String] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         titleLabel.text = rowName
         tableView.rowHeight = view.frame.height / 10
-
+        
         for i in 1...3 {
             duoArray.append(database.fetch(name: "duas", n: i))
         }
@@ -33,8 +37,26 @@ class TableInDuolarController: UIViewController {
                 rowArray.append(duoArray[0][i])
             }
         }
+        
         if rowArray.isEmpty {
             rowArray = duoArray[0]
+        }
+        
+       
+        for i in duoArray[2].indices {
+            if "duo\(duoArray[2][i])" == rowName {
+                contentArray.append(duoArray[1][i])
+            }
+            
+        }
+        
+        if contentArray.isEmpty {
+            contentArray = duoArray[1]
+        }
+        
+        for i in rowArray.indices {
+            let vc = TextInPageVC(with: contentArray[i], with: rowArray[i])
+            myControllers.append(vc)
         }
     }
         
@@ -55,5 +77,43 @@ extension TableInDuolarController: UITableViewDelegate, UITableViewDataSource {
         return cell
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.presentPageVC(from: indexPath.row)
+    }
     
+    func presentPageVC(from: Int) {
+        let first = myControllers[from]
+        let vc = UIPageViewController(transitionStyle: .pageCurl,
+                                      navigationOrientation: .horizontal,
+                                      options: nil)
+        vc.delegate = self
+        vc.dataSource = self
+        vc.setViewControllers([first],
+                              direction: .forward,
+                              animated: true,
+                              completion: nil)
+        navigationController?.present(vc, animated: true, completion: nil)
+    }
+}
+
+
+extension TableInDuolarController: UIPageViewControllerDelegate, UIPageViewControllerDataSource {
+    
+    func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
+        guard let index = myControllers.firstIndex(of: viewController as! TextInPageVC), index > 0 else {
+            return nil
+        }
+        
+        let before = index - 1
+        return myControllers[before]
+    }
+    
+    func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController? {
+        guard let index = myControllers.firstIndex(of: viewController as! TextInPageVC), index < (myControllers.count - 1) else {
+            return nil
+        }
+        
+        let after = index + 1
+        return myControllers[after]
+    }
 }
