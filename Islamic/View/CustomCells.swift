@@ -53,3 +53,6 @@ class CalendarCustomCell: UICollectionViewCell {
 }
 
 
+class CustomBookTableCell: UITableViewCell {
+    @IBOutlet weak var titleCell: UILabel!
+}

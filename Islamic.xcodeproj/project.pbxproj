@@ -11,7 +11,7 @@
 		8C1224CB25483783002FFFF7 /* TableInDuolarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1224CA25483783002FFFF7 /* TableInDuolarController.swift */; };
 		8C1224CE25483A52002FFFF7 /* CustomCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1224CD25483A52002FFFF7 /* CustomCells.swift */; };
 		8C7ADB81254801A100920E4D /* TongiVaTungiZikrlarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7ADB80254801A100920E4D /* TongiVaTungiZikrlarController.swift */; };
-		DC1BF357255561B7003029AA /* TextInPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1BF356255561B7003029AA /* TextInPageVC.swift */; };
+		DC1BF357255561B7003029AA /* TextInPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1BF356255561B7003029AA /* TextInPageController.swift */; };
 		DC38CA6A2554273400A343C9 /* DetailsPageViewControllerInIslom.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC38CA692554273400A343C9 /* DetailsPageViewControllerInIslom.swift */; };
 		DC6B0E4D2554136500D02009 /* TableInIslomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6B0E4C2554136500D02009 /* TableInIslomViewController.swift */; };
 		DCA40A59254AEC80006D0EEA /* IslomController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA40A58254AEC80006D0EEA /* IslomController.swift */; };
@@ -21,13 +21,12 @@
 		DCED9B842547F21800ACB166 /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCED9B822547F21800ACB166 /* Database.swift */; };
 		DCED9B922547F22500ACB166 /* DuolarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCED9B872547F22500ACB166 /* DuolarController.swift */; };
 		DCED9B932547F22500ACB166 /* Asmaul_Husna_Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCED9B882547F22500ACB166 /* Asmaul_Husna_Cell.swift */; };
-		DCED9B942547F22500ACB166 /* Al-Jome_As-SahihController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCED9B892547F22500ACB166 /* Al-Jome_As-SahihController.swift */; };
+		DCED9B942547F22500ACB166 /* AlJomeAsSahihController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCED9B892547F22500ACB166 /* AlJomeAsSahihController.swift */; };
 		DCED9B952547F22500ACB166 /* ZikrlarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCED9B8A2547F22500ACB166 /* ZikrlarController.swift */; };
 		DCED9B962547F22500ACB166 /* BoshSahifaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCED9B8B2547F22500ACB166 /* BoshSahifaController.swift */; };
 		DCED9B972547F22500ACB166 /* NamozOqishniOrganamizController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCED9B8C2547F22500ACB166 /* NamozOqishniOrganamizController.swift */; };
 		DCED9B982547F22500ACB166 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCED9B8D2547F22500ACB166 /* WebViewController.swift */; };
 		DCED9B992547F22500ACB166 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCED9B8E2547F22500ACB166 /* CalendarViewController.swift */; };
-		DCED9B9A2547F22500ACB166 /* Al-Jome_As-Sahih_Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCED9B8F2547F22500ACB166 /* Al-Jome_As-Sahih_Cell.swift */; };
 		DCED9B9B2547F22500ACB166 /* NamozVaqtlariController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCED9B902547F22500ACB166 /* NamozVaqtlariController.swift */; };
 		DCED9B9C2547F22500ACB166 /* Asmaul_Husna_Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCED9B912547F22500ACB166 /* Asmaul_Husna_Controller.swift */; };
 		DCED9BBF2547F23A00ACB166 /* tahorat_3.pdf in Resources */ = {isa = PBXBuildFile; fileRef = DCED9B9F2547F23900ACB166 /* tahorat_3.pdf */; };
@@ -74,7 +73,7 @@
 		8C7ADB80254801A100920E4D /* TongiVaTungiZikrlarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TongiVaTungiZikrlarController.swift; sourceTree = "<group>"; };
 		A8F72359520AFD6D18304DA0 /* Pods-Islamic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Islamic.release.xcconfig"; path = "Target Support Files/Pods-Islamic/Pods-Islamic.release.xcconfig"; sourceTree = "<group>"; };
 		AD128E1232E09167BD0ADDA4 /* Pods_Islamic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Islamic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DC1BF356255561B7003029AA /* TextInPageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextInPageVC.swift; sourceTree = "<group>"; };
+		DC1BF356255561B7003029AA /* TextInPageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextInPageController.swift; sourceTree = "<group>"; };
 		DC38CA692554273400A343C9 /* DetailsPageViewControllerInIslom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsPageViewControllerInIslom.swift; sourceTree = "<group>"; };
 		DC6B0E4C2554136500D02009 /* TableInIslomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableInIslomViewController.swift; sourceTree = "<group>"; };
 		DCA40A58254AEC80006D0EEA /* IslomController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IslomController.swift; sourceTree = "<group>"; };
@@ -86,13 +85,12 @@
 		DCED9B822547F21800ACB166 /* Database.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
 		DCED9B872547F22500ACB166 /* DuolarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DuolarController.swift; sourceTree = "<group>"; };
 		DCED9B882547F22500ACB166 /* Asmaul_Husna_Cell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Asmaul_Husna_Cell.swift; sourceTree = "<group>"; };
-		DCED9B892547F22500ACB166 /* Al-Jome_As-SahihController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Al-Jome_As-SahihController.swift"; sourceTree = "<group>"; };
+		DCED9B892547F22500ACB166 /* AlJomeAsSahihController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlJomeAsSahihController.swift; sourceTree = "<group>"; };
 		DCED9B8A2547F22500ACB166 /* ZikrlarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZikrlarController.swift; sourceTree = "<group>"; };
 		DCED9B8B2547F22500ACB166 /* BoshSahifaController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoshSahifaController.swift; sourceTree = "<group>"; };
 		DCED9B8C2547F22500ACB166 /* NamozOqishniOrganamizController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NamozOqishniOrganamizController.swift; sourceTree = "<group>"; };
 		DCED9B8D2547F22500ACB166 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		DCED9B8E2547F22500ACB166 /* CalendarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
-		DCED9B8F2547F22500ACB166 /* Al-Jome_As-Sahih_Cell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Al-Jome_As-Sahih_Cell.swift"; sourceTree = "<group>"; };
 		DCED9B902547F22500ACB166 /* NamozVaqtlariController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NamozVaqtlariController.swift; sourceTree = "<group>"; };
 		DCED9B912547F22500ACB166 /* Asmaul_Husna_Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Asmaul_Husna_Controller.swift; sourceTree = "<group>"; };
 		DCED9B9F2547F23900ACB166 /* tahorat_3.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = tahorat_3.pdf; sourceTree = "<group>"; };
@@ -274,16 +272,15 @@
 				DCED9B8E2547F22500ACB166 /* CalendarViewController.swift */,
 				DCED9B872547F22500ACB166 /* DuolarController.swift */,
 				8C1224CA25483783002FFFF7 /* TableInDuolarController.swift */,
+				DC1BF356255561B7003029AA /* TextInPageController.swift */,
 				DCED9B8A2547F22500ACB166 /* ZikrlarController.swift */,
 				8C7ADB80254801A100920E4D /* TongiVaTungiZikrlarController.swift */,
+				DCED9B892547F22500ACB166 /* AlJomeAsSahihController.swift */,
 				DCED9B882547F22500ACB166 /* Asmaul_Husna_Cell.swift */,
-				DCED9B892547F22500ACB166 /* Al-Jome_As-SahihController.swift */,
-				DCED9B8F2547F22500ACB166 /* Al-Jome_As-Sahih_Cell.swift */,
 				DCED9B912547F22500ACB166 /* Asmaul_Husna_Controller.swift */,
 				DCA40A58254AEC80006D0EEA /* IslomController.swift */,
 				DC6B0E4C2554136500D02009 /* TableInIslomViewController.swift */,
 				DC38CA692554273400A343C9 /* DetailsPageViewControllerInIslom.swift */,
-				DC1BF356255561B7003029AA /* TextInPageVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -468,7 +465,6 @@
 				DC6B0E4D2554136500D02009 /* TableInIslomViewController.swift in Sources */,
 				DCED9B9C2547F22500ACB166 /* Asmaul_Husna_Controller.swift in Sources */,
 				DCED9B922547F22500ACB166 /* DuolarController.swift in Sources */,
-				DCED9B9A2547F22500ACB166 /* Al-Jome_As-Sahih_Cell.swift in Sources */,
 				DCED9BE12547F24600ACB166 /* AppDelegate.swift in Sources */,
 				8C1224CB25483783002FFFF7 /* TableInDuolarController.swift in Sources */,
 				DCED9B982547F22500ACB166 /* WebViewController.swift in Sources */,
@@ -479,11 +475,11 @@
 				DCED9B932547F22500ACB166 /* Asmaul_Husna_Cell.swift in Sources */,
 				DCED9BEB2547F53600ACB166 /* ZikrlarCell.swift in Sources */,
 				DCED9B972547F22500ACB166 /* NamozOqishniOrganamizController.swift in Sources */,
-				DCED9B942547F22500ACB166 /* Al-Jome_As-SahihController.swift in Sources */,
+				DCED9B942547F22500ACB166 /* AlJomeAsSahihController.swift in Sources */,
 				DCED9B832547F21800ACB166 /* Extensions.swift in Sources */,
 				8C1224CE25483A52002FFFF7 /* CustomCells.swift in Sources */,
 				DCED9B952547F22500ACB166 /* ZikrlarController.swift in Sources */,
-				DC1BF357255561B7003029AA /* TextInPageVC.swift in Sources */,
+				DC1BF357255561B7003029AA /* TextInPageController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -624,7 +620,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 35PVF99Y92;
+				DEVELOPMENT_TEAM = WQU2F7BUGJ;
 				INFOPLIST_FILE = Islamic/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -645,7 +641,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 35PVF99Y92;
+				DEVELOPMENT_TEAM = WQU2F7BUGJ;
 				INFOPLIST_FILE = Islamic/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (

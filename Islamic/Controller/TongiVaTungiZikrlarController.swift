@@ -12,8 +12,6 @@ class TongiVaTungiZikrlarController: UIViewController {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var collectionView: UICollectionView!
     
-    var database = Database()
-    
     var arabicArray: [String] = []
     var transcriptionArray: [String] = []
     var translationArray: [String] = []

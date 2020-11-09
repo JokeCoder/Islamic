@@ -12,7 +12,7 @@ class TableInIslomViewController: UIViewController {
     var arrayInIslam: [String] = []
     
     
-    var myControllers = [TextInPageVC]()
+    var myControllers = [TextInPageController]()
     var contentArray: [String] = []
     
     @IBOutlet weak var navTitle: UILabel!
@@ -30,7 +30,7 @@ class TableInIslomViewController: UIViewController {
         
         for i in arrayInIslam.indices {
 //            let vc = storyboard?.instantiateViewController(withIdentifier: "textinpageVC") as! TextInPageVC
-            let vc = TextInPageVC(with: contentArray[i], with: arrayInIslam[i])
+            let vc = TextInPageController(with: contentArray[i], with: arrayInIslam[i])
 //            vc.textViewText = contentArray[i]
 //            vc.titleText = arrayInIslam[i]
 //            vc.textView.text = contentArray[i]
@@ -76,7 +76,7 @@ extension TableInIslomViewController: UITableViewDelegate, UITableViewDataSource
 extension TableInIslomViewController: UIPageViewControllerDelegate, UIPageViewControllerDataSource {
     
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
-        guard let index = myControllers.firstIndex(of: viewController as! TextInPageVC), index > 0 else {
+        guard let index = myControllers.firstIndex(of: viewController as! TextInPageController), index > 0 else {
             return nil
         }
         
@@ -85,7 +85,7 @@ extension TableInIslomViewController: UIPageViewControllerDelegate, UIPageViewCo
     }
     
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController? {
-        guard let index = myControllers.firstIndex(of: viewController as! TextInPageVC), index < (myControllers.count - 1) else {
+        guard let index = myControllers.firstIndex(of: viewController as! TextInPageController), index < (myControllers.count - 1) else {
             return nil
         }
         

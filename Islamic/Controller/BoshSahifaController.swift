@@ -5,6 +5,8 @@ import CoreLocation
 var lat: CLLocationDegrees?
 var long: CLLocationDegrees?
 
+var database = Database()
+
 class BoshSahifaController: UIViewController, CLLocationManagerDelegate {
     
     @IBOutlet weak var notificationLabel: UILabel!

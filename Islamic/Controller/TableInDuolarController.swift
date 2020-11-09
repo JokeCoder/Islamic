@@ -11,11 +11,8 @@ class TableInDuolarController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var titleLabel: UILabel!
-    var myControllers = [TextInPageVC]()
     
-    
-    var database = Database()
-    
+    var myControllers = [TextInPageController]()
     
     var rowName: String = ""
     var duoArray: [[String]] = []
@@ -55,7 +52,7 @@ class TableInDuolarController: UIViewController {
         }
         
         for i in rowArray.indices {
-            let vc = TextInPageVC(with: contentArray[i], with: rowArray[i])
+            let vc = TextInPageController(with: contentArray[i], with: rowArray[i])
             myControllers.append(vc)
         }
     }
@@ -100,7 +97,7 @@ extension TableInDuolarController: UITableViewDelegate, UITableViewDataSource {
 extension TableInDuolarController: UIPageViewControllerDelegate, UIPageViewControllerDataSource {
     
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
-        guard let index = myControllers.firstIndex(of: viewController as! TextInPageVC), index > 0 else {
+        guard let index = myControllers.firstIndex(of: viewController as! TextInPageController), index > 0 else {
             return nil
         }
         
@@ -109,7 +106,7 @@ extension TableInDuolarController: UIPageViewControllerDelegate, UIPageViewContr
     }
     
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController? {
-        guard let index = myControllers.firstIndex(of: viewController as! TextInPageVC), index < (myControllers.count - 1) else {
+        guard let index = myControllers.firstIndex(of: viewController as! TextInPageController), index < (myControllers.count - 1) else {
             return nil
         }
         
