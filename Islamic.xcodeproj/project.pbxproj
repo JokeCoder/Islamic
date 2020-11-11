@@ -14,6 +14,10 @@
 		DC1BF357255561B7003029AA /* TextInPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1BF356255561B7003029AA /* TextInPageController.swift */; };
 		DC38CA6A2554273400A343C9 /* DetailsPageViewControllerInIslom.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC38CA692554273400A343C9 /* DetailsPageViewControllerInIslom.swift */; };
 		DC6B0E4D2554136500D02009 /* TableInIslomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6B0E4C2554136500D02009 /* TableInIslomViewController.swift */; };
+		DC833C80255C0F1500224778 /* CLLocation+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC833C79255C0F1400224778 /* CLLocation+Extension.swift */; };
+		DC833C84255C0F1500224778 /* UserDefauts+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC833C7D255C0F1500224778 /* UserDefauts+Extensions.swift */; };
+		DC833C85255C0F1500224778 /* CompassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC833C7E255C0F1500224778 /* CompassViewController.swift */; };
+		DC833C86255C0F1500224778 /* LocationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC833C7F255C0F1500224778 /* LocationDelegate.swift */; };
 		DCA40A59254AEC80006D0EEA /* IslomController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA40A58254AEC80006D0EEA /* IslomController.swift */; };
 		DCED9B722547F1CE00ACB166 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCED9B702547F1CE00ACB166 /* LaunchScreen.storyboard */; };
 		DCED9B7E2547F20900ACB166 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCED9B7D2547F20900ACB166 /* Main.storyboard */; };
@@ -76,6 +80,10 @@
 		DC1BF356255561B7003029AA /* TextInPageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextInPageController.swift; sourceTree = "<group>"; };
 		DC38CA692554273400A343C9 /* DetailsPageViewControllerInIslom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsPageViewControllerInIslom.swift; sourceTree = "<group>"; };
 		DC6B0E4C2554136500D02009 /* TableInIslomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableInIslomViewController.swift; sourceTree = "<group>"; };
+		DC833C79255C0F1400224778 /* CLLocation+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CLLocation+Extension.swift"; sourceTree = "<group>"; };
+		DC833C7D255C0F1500224778 /* UserDefauts+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UserDefauts+Extensions.swift"; sourceTree = "<group>"; };
+		DC833C7E255C0F1500224778 /* CompassViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompassViewController.swift; sourceTree = "<group>"; };
+		DC833C7F255C0F1500224778 /* LocationDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationDelegate.swift; sourceTree = "<group>"; };
 		DCA40A58254AEC80006D0EEA /* IslomController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IslomController.swift; sourceTree = "<group>"; };
 		DCED9B622547F1CD00ACB166 /* Islamic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Islamic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCED9B712547F1CE00ACB166 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -220,6 +228,17 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		DC833C78255C0EF700224778 /* CompassQibla */ = {
+			isa = PBXGroup;
+			children = (
+				DC833C79255C0F1400224778 /* CLLocation+Extension.swift */,
+				DC833C7E255C0F1500224778 /* CompassViewController.swift */,
+				DC833C7F255C0F1500224778 /* LocationDelegate.swift */,
+				DC833C7D255C0F1500224778 /* UserDefauts+Extensions.swift */,
+			);
+			path = CompassQibla;
+			sourceTree = "<group>";
+		};
 		DCED9B592547F1CD00ACB166 = {
 			isa = PBXGroup;
 			children = (
@@ -281,6 +300,7 @@
 				DCA40A58254AEC80006D0EEA /* IslomController.swift */,
 				DC6B0E4C2554136500D02009 /* TableInIslomViewController.swift */,
 				DC38CA692554273400A343C9 /* DetailsPageViewControllerInIslom.swift */,
+				DC833C78255C0EF700224778 /* CompassQibla */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -464,16 +484,20 @@
 				DCED9B992547F22500ACB166 /* CalendarViewController.swift in Sources */,
 				DC6B0E4D2554136500D02009 /* TableInIslomViewController.swift in Sources */,
 				DCED9B9C2547F22500ACB166 /* Asmaul_Husna_Controller.swift in Sources */,
+				DC833C80255C0F1500224778 /* CLLocation+Extension.swift in Sources */,
 				DCED9B922547F22500ACB166 /* DuolarController.swift in Sources */,
 				DCED9BE12547F24600ACB166 /* AppDelegate.swift in Sources */,
 				8C1224CB25483783002FFFF7 /* TableInDuolarController.swift in Sources */,
+				DC833C84255C0F1500224778 /* UserDefauts+Extensions.swift in Sources */,
 				DCED9B982547F22500ACB166 /* WebViewController.swift in Sources */,
 				DCA40A59254AEC80006D0EEA /* IslomController.swift in Sources */,
 				DCED9B962547F22500ACB166 /* BoshSahifaController.swift in Sources */,
 				DCED9B9B2547F22500ACB166 /* NamozVaqtlariController.swift in Sources */,
 				DCED9B842547F21800ACB166 /* Database.swift in Sources */,
+				DC833C85255C0F1500224778 /* CompassViewController.swift in Sources */,
 				DCED9B932547F22500ACB166 /* Asmaul_Husna_Cell.swift in Sources */,
 				DCED9BEB2547F53600ACB166 /* ZikrlarCell.swift in Sources */,
+				DC833C86255C0F1500224778 /* LocationDelegate.swift in Sources */,
 				DCED9B972547F22500ACB166 /* NamozOqishniOrganamizController.swift in Sources */,
 				DCED9B942547F22500ACB166 /* AlJomeAsSahihController.swift in Sources */,
 				DCED9B832547F21800ACB166 /* Extensions.swift in Sources */,
@@ -620,7 +644,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = WQU2F7BUGJ;
+				DEVELOPMENT_TEAM = 35PVF99Y92;
 				INFOPLIST_FILE = Islamic/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -641,7 +665,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = WQU2F7BUGJ;
+				DEVELOPMENT_TEAM = 35PVF99Y92;
 				INFOPLIST_FILE = Islamic/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
