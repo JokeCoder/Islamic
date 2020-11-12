@@ -37,6 +37,8 @@ class CompassViewController: UIViewController {
             case .landscapeRight: return -90
             case .portrait, .unknown: return 0
             case .portraitUpsideDown: return isFaceDown ? 180 : -180
+            @unknown default:
+                fatalError()
             }
         }()
         return adjAngle

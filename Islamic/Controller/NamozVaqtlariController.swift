@@ -77,10 +77,6 @@ class NamozVaqtlariController: UIViewController {
         
     }
     
-    @IBAction func calendarAction(_ sender: UIButton) {
-        
-        
-    }
     @IBAction func back(_ sender: Any) {
         navigationController?.popViewController(animated: true)
     }

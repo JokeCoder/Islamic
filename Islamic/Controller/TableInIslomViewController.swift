@@ -11,7 +11,6 @@ class TableInIslomViewController: UIViewController {
     var db = Database()
     var arrayInIslam: [String] = []
     
-    
     var myControllers = [TextInPageController]()
     var contentArray: [String] = []
     
@@ -25,16 +24,12 @@ class TableInIslomViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navTitle.text = title
+        
         arrayInIslam = db.fetch(name: title!, n: 1)
         contentArray = db.fetch(name: title!, n: 2)
         
         for i in arrayInIslam.indices {
-//            let vc = storyboard?.instantiateViewController(withIdentifier: "textinpageVC") as! TextInPageVC
             let vc = TextInPageController(with: contentArray[i], with: arrayInIslam[i])
-//            vc.textViewText = contentArray[i]
-//            vc.titleText = arrayInIslam[i]
-//            vc.textView.text = contentArray[i]
-//            vc.navTitle.text = arrayInIslam[i]
             myControllers.append(vc)
         }
     }
@@ -59,15 +54,10 @@ extension TableInIslomViewController: UITableViewDelegate, UITableViewDataSource
     
     func presentPageVC(from: Int) {
         let first = myControllers[from]
-        let vc = UIPageViewController(transitionStyle: .pageCurl,
-                                      navigationOrientation: .horizontal,
-                                      options: nil)
+        let vc = UIPageViewController(transitionStyle: .pageCurl, navigationOrientation: .horizontal, options: nil)
         vc.delegate = self
         vc.dataSource = self
-        vc.setViewControllers([first],
-                              direction: .forward,
-                              animated: true,
-                              completion: nil)
+        vc.setViewControllers([first], direction: .forward, animated: true, completion: nil)
         navigationController?.present(vc, animated: true, completion: nil)
     }
 }

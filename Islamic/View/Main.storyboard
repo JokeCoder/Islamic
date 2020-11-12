@@ -1103,7 +1103,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XEe-XP-vaD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3683" y="761"/>
+            <point key="canvasLocation" x="4157" y="696"/>
         </scene>
         <!--Namoz Oqishni Organamiz Controller-->
         <scene sceneID="AH6-G0-3b5">
@@ -1755,7 +1755,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V8n-gB-ecR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5409" y="517"/>
+            <point key="canvasLocation" x="6151" y="-9"/>
         </scene>
         <!--Islom Controller-->
         <scene sceneID="fcr-bA-fjL">
@@ -1862,7 +1862,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a1Y-fP-Cy1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4658" y="517"/>
+            <point key="canvasLocation" x="6151" y="696"/>
         </scene>
         <!--Compass View Controller-->
         <scene sceneID="zDy-TW-pOt">
